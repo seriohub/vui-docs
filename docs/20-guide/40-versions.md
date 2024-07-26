@@ -1,0 +1,28 @@
+---
+sidebar_label: 'Version'
+sidebar_position: 15
+description: 'Helm released versions'
+custom_edit_url: https://github.com/seriohub/velero-helm/blob/main/components.txt
+---
+Below is the table of released Helm versions, application versions, and component versions.
+# Version Information
+
+| version    | appVersion    | api    | ui     | watchdog  |
+|------------|---------------|--------|--------|-----------|
+| 0.1.13     | 0.1.13        | 0.1.17 | 0.1.15 | 0.1.6     |
+| 0.1.12     | 0.1.12        | 0.1.16 | 0.1.14 | 0.1.6     |
+| 0.1.11     | 0.1.11        | 0.1.15 | 0.1.13 | 0.1.6     |
+| 0.1.10     | 0.1.10        | 0.1.14 | 0.1.12 | 0.1.6     |
+| 0.1.9      | 0.1.9         | 0.1.13 | 0.1.11 | 0.1.6     |
+| 0.1.8      | 0.1.8         | 0.1.13 | 0.1.11 | 0.1.5     |
+| 0.1.7      | 0.1.7         | 0.1.12 | 0.1.10 | 0.1.4     |
+| 0.1.6      | 0.1.6         | 0.1.12 | 0.1.10 | 0.1.3     |
+| 0.1.5      | 0.1.5         | 0.1.11 | 0.1.10 | 0.1.3     |
+| 0.1.4      | 0.1.4         | 0.1.10 | 0.1.9  | 0.1.3     |
+| 0.1.3      | 0.1.3         | 0.1.9  | 0.1.8  | 0.1.2     |
+| 0.1.2      | 0.1.2         | 0.1.9  | 0.1.8  | 0.1.1     |
+| 0.1.1      | 0.1.1         | 0.1.8  | 0.1.8  | 0.1.0     |
+| 0.1.0      | 0.1.0         | 0.1.7  | 0.1.7  | dev       |
+
+
+              
