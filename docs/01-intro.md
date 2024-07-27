@@ -20,6 +20,7 @@ The Vui project was created to simplify various Velero backup operations through
 - Velero-API (agent module) [GitHub](https://github.com/seriohub/velero-api)
 - Velero-UI (web user interface) [GitHub](https://github.com/seriohub/velero-ui)
 - Velero-Watchdog (notifications service) [GitHub](https://github.com/seriohub/velero-watchdog)
+- Velero-Docs (documentation) [GitHub](https://github.com/seriohub/velero-docs)
 - Velero-Core (core to centralize multi-cluster use) `Not released`
 
 While YAML files are available for individual projects to facilitate installation via kubectl, it is highly recommended to use [Helm](https://github.com/seriohub/velero-helm) for [installation](getting-started/helm-installation). Helm automates many steps, streamlining the process.

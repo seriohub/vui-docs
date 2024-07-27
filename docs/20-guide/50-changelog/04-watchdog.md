@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'WATCHDOG'
+sidebar_label: 'Watchdog'
 sidebar_position: 4
 description: Watchdog changelog
 custom_edit_url: https://github.com/seriohub/velero-watchdog/blob/main/CHANGELOG.md

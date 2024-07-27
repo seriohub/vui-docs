@@ -1,49 +1,82 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from './styles.module.css';
+import clsx from "clsx";
+import Heading from "@theme/Heading";
+import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: "Intuitive Dashboard",
+    Svg: require("@site/static/img/undraw_dashboard.svg").default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Access all your Velero backup information in one centralized,
+        user-friendly dashboard. Monitor backups, restores, and system health at
+        a glance.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: "Real-Time Alerts and Notifications",
+    Svg: require("@site/static/img/undraw_new_notifications.svg").default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Stay informed with real-time alerts and notifications about the status
+        of your backups. Receive updates via email, SMS, or in-app
+        notifications.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: "Cron Heat Map Visualization",
+    Svg: require("@site/static/img/undraw_design_stats.svg").default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Visualize your backup activity with heat map. Identify peak usage times
+        and optimize your backup strategies.
+      </>
+    ),
+  },
+  {
+    title: "Centralized Management for Multiple Clusters",
+    Svg: require("@site/static/img/undraw_server_cluster.svg").default,
+    description: (
+      <>
+        Effortlessly manage and monitor backups across all your clusters from
+        one centralized interface.
+      </>
+    ),
+  },
+  {
+    title: "Simplified Storage Class Mapping",
+    Svg: require("@site/static/img/undraw_memory_storage.svg").default,
+    description: (
+      <>
+        Easily map and manage storage classes across different environments.
+        Simplify storage management and ensure consistency in your backup and
+        restore processes.
+      </>
+    ),
+  },
+  {
+    title: "S3 Repository Statistics and Restic Operations",
+    Svg: require("@site/static/img/undraw_product_iteration.svg").default,
+    description: (
+      <>
+        Access statistics directly from your S3 repositories. Monitor storage
+        usage. Perform advanced operations on Restic repositories.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx("col col--4")}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
       </div>
@@ -60,9 +93,9 @@ export default function HomepageFeatures(): JSX.Element {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {/*FeatureList.map((props, idx) => (
+          {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
-          ))*/}
+          ))}
         </div>
       </div>
     </section>

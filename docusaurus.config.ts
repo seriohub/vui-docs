@@ -6,8 +6,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
-  title: 'Vui',
-  tagline: 'Backup Simplified',
+  title: 'VUI Simplify Your Velero Backups Management',
+  tagline: 'Your all-in-one dashboard for Velero backups',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -52,7 +52,7 @@ const config: Config = {
             // Here we update to add a title to the page.
             // The content item contains all of the markdown from the file
             content: `---
-sidebar_label: 'HELM'
+sidebar_label: 'Helm'
 sidebar_position: 1
 description: HELM changelog
 custom_edit_url: https://github.com/seriohub/velero-helm/blob/main/CHANGELOG.md
@@ -142,7 +142,7 @@ ${content}`,
             // Here we update to add a title to the page.
             // The content item contains all of the markdown from the file
             content: `---
-sidebar_label: 'WATCHDOG'
+sidebar_label: 'Watchdog'
 sidebar_position: 4
 description: Watchdog changelog
 custom_edit_url: https://github.com/seriohub/velero-watchdog/blob/main/CHANGELOG.md
@@ -247,11 +247,15 @@ ${content}
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Learn',
           items: [
             {
-              label: 'Docs',
+              label: 'Introduction',
               to: '/docs/intro',
+            },
+            {
+              label: 'Installation',
+              to: '/docs/getting-started/helm-installation',
             },
           ],
         },
@@ -299,6 +303,15 @@ ${content}
             {
               label: 'Docs',
               href: 'https://github.com/seriohub/velero-docs',
+            },
+          ],
+        },
+        {
+          title: 'Contact',
+          items: [
+            {
+              label: 'info@seriohub.com',
+              href: 'mailto:info@seriohub.com',
             },
           ],
         },
