@@ -15,7 +15,7 @@ Attention Users: This project is in active development, and certain tools or fea
 
 ## Getting Started
 
-The Vui project was created to simplify various Velero backup operations through a user-friendly interface. Vui consists of four modules
+The Vui project was created to simplify various Velero backup operations through a user-friendly interface. Vui consists of the following modules:
 
 - Velero-API (agent module) [GitHub](https://github.com/seriohub/velero-api)
 - Velero-UI (web user interface) [GitHub](https://github.com/seriohub/velero-ui)
