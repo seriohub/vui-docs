@@ -13,6 +13,8 @@ This is the first version of the documentation for the VUI project. It may be in
 Attention Users: This project is in active development, and certain tools or features might still be under construction. We kindly urge you to exercise caution while utilizing the tools within this environment. While every effort is being made to ensure the stability and reliability of the project, there could be unexpected behaviors or limited functionalities in some areas. We highly recommend thoroughly testing the project in non-production or sandbox environments before implementing it in critical or production systems. Your feedback is invaluable to us; if you encounter any issues or have suggestions for improvement, please feel free to report them. Your input helps us enhance the project's performance and user experience. Thank you for your understanding and cooperation.
 :::
 
+![core-dashboard](./assets/screenshots/18_core_dashboard.png)
+
 ## Getting Started
 
 The Vui project was created to simplify various Velero backup operations through a user-friendly interface. Vui consists of the following modules:
