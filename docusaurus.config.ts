@@ -325,7 +325,7 @@ ${content}
     },
     matomo: {
       matomoUrl: 'https://matomo.serio.cloud/',
-      siteId: '2',
+      siteId: '3',
     },
   } satisfies Preset.ThemeConfig,
 
