@@ -35,6 +35,7 @@ const config: Config = {
   },
 
   plugins: [
+    'docusaurus-plugin-matomo',
     [
       "docusaurus-plugin-remote-content",
       {
@@ -321,8 +322,13 @@ ${content}
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
-    }
+    },
+    matomo: {
+      matomoUrl: 'https://matomo.serio.cloud/',
+      siteId: '6',
+    },
   } satisfies Preset.ThemeConfig,
+
 };
 
 export default config;
