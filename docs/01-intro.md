@@ -37,5 +37,6 @@ While YAML files are available for individual projects to facilitate installatio
 - Storage class map
 - Restic features (check locks, unlock, unlock --remove-all)
 - Multi cluster monitoring (require the core)
+- Notifications
 
 Please read [overview](./10-getting-started/01-overview.md) for more details.
