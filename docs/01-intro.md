@@ -25,8 +25,6 @@ The Vui project was created to simplify various Velero backup operations through
 - Velero-Docs (documentation) [GitHub](https://github.com/seriohub/velero-docs)
 - Velero-Core (core to centralize multi-cluster use) `Not released`
 
-While YAML files are available for individual projects to facilitate installation via kubectl, it is highly recommended to use [Helm](https://github.com/seriohub/velero-helm) for [installation](getting-started/helm-installation). Helm automates many steps, streamlining the process.
-
 ## Features
 
 - Intuitive usability
@@ -39,4 +37,8 @@ While YAML files are available for individual projects to facilitate installatio
 - Multi cluster monitoring (require the core)
 - Notifications
 
-Please read [overview](./10-getting-started/01-overview.md) for more details.
+Please read [overview](./10-getting-started/01-overview.md) for more details and screenshots.
+
+## Installation
+
+While YAML files are available for individual projects to facilitate installation via kubectl, it is highly recommended to use [Helm](https://github.com/seriohub/velero-helm) for [installation](getting-started/helm-installation). Helm automates many steps, streamlining the process.
