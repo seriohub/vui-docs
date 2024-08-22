@@ -14,7 +14,7 @@ The VUI-Core component is not yet released
 ![software-archiceture](./../../assets//screenshots/21_sa_VUI_Core.png)
 
 :::info
-The **Presentation layer** and the **Gateway layer** must be deployed once possibly in the same cluster. The **Logical layer** runs as an agent and can be deployed several times in a different clusters.
+The **Presentation layer** and the **Gateway layer** must be deployed once, possibly in the same cluster. The **Logical layer** runs as an agent and can be deployed several times in a different clusters.
 :::
 
 ---
