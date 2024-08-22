@@ -7,14 +7,14 @@ sidebar_position: 10
 
 ## Single cluster
 
-The VUI project is designed to be Cloud-native ready. The starting idea was to develop a project composed of several microservices to be deployed in Kubernetes cluster.
+In a single cluster installation, all components are deployed within that one cluster.
+
+The software architecture of the VUI project is organized into the following layers:
+
+- **Presentation Layer (VUI-UI)**: This layer manages the web interface that is displayed to users.
+- **Logical Layer (VUI-API and VUI-Watchdog)**: This layer processes all user requests made through the graphical interface, interacts with the Velero engine, and sends notifications when events occur.
+
+Each element of the project is developed as a indipendent service
 
 
 ![software-architecture](./../../assets/screenshots/20_sa_VUI.png)
-
-The software design of VUI project is divided into: 
-  - **Presentation layer (VUI-UI)**: the layer manages the web interface shown to users. 
-  - **Logical layer (VUI-API and VUI-Watchdog)**: handles all customer requests made through the graphical interface, communicates with the Velero engine and sends notifications when events occur.
-
-
-This configuration is designed to manage a single Kubernetes cluster.
