@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Multicluster'
+sidebar_label: 'Multi-cluster'
 sidebar_position: 20
 ---
 
-## Multicluster
+## Multi-cluster
 
 
 For those who manage several Kubernetes clusters and wish to centralise the web interface (VUI-UI), the **VUI-Core**  component acts as a gateway. 
