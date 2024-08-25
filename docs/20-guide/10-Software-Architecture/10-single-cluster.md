@@ -3,9 +3,7 @@ sidebar_label: 'Single cluster'
 sidebar_position: 10
 ---
 
-# Software Architecture
-
-## Single cluster
+# Single cluster
 
 In a single cluster installation, all components are deployed within that one cluster.
 
