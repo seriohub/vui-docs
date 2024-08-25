@@ -1,10 +1,11 @@
 ---
-sidebar_label: 'Version'
+sidebar_label: 'Version compatibility'
 sidebar_position: 15
 description: 'Helm released versions'
 custom_edit_url: https://github.com/seriohub/velero-helm/blob/main/components.txt
 ---
-Below is the table of released Helm versions, application versions, and component versions.
+The table below lists the released versions of Helm, application, and components, making it easy to verify compatibility between them.
+
 # Version Information
 
 | version    | appVersion    | api    | ui     | watchdog  |
@@ -25,5 +26,4 @@ Below is the table of released Helm versions, application versions, and componen
 | 0.1.2      | 0.1.2         | 0.1.9  | 0.1.8  | 0.1.1     |
 | 0.1.1      | 0.1.1         | 0.1.8  | 0.1.8  | 0.1.0     |
 | 0.1.0      | 0.1.0         | 0.1.7  | 0.1.7  | dev       |
-
               

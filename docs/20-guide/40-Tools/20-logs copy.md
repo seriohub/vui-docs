@@ -7,7 +7,7 @@ sidebar_position: 10
 
 ## Debug
 
-The debug tool allow to control different level of logs.
+The debug tool allow to verifiy different level of logs.
 
 ![software-architecture-sc](./../../assets/screenshots/35_debug_shell_sz.png)
 
