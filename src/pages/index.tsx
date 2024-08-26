@@ -14,6 +14,9 @@ function HomepageHeader() {
       <div className="container">
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
+          <meta property="og:url" content="https://vui.seriohub.com" />
+          <meta property="og:description" content="An innovative solution designed to streamline and simplify the management of Velero backups" />
+          <meta property="og:image" content="https://vui.seriohub.com/assets/images/01_agent_dashboard-ecd203a5125479304ae8ba4f63279a2d.png" />
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
