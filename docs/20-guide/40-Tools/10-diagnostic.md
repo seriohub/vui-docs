@@ -15,12 +15,12 @@ In the bottom part of the page, next to the agent name there will be the diagnos
 ![diagnostic-link-ok](./../../assets/screenshots/33_diagnostic_ok.png)
 
 The result of the checks could be:
-    - **All Check Passed** (green fontcolor) if no error/warnings are active
-    - **Check warning** (orange fontcolor) if is a warning is active
-    - **Error** (red fontcolor) if is an error is active
+    - **All Check Passed** (green color) if no error/warnings are active
+    - **Check warning** (orange color) if is a warning is active
+    - **Error** (red color) if is an error is active
 
 To access the diagnostics mask click on the **status**.
 
 :::tip
-If the icon before the **Agent** name is ![diagnostic-link-ok](./../../assets/screenshots/34_link_status.png), the VUI-API (agent) endpoint is not reachable
+If the icon before the **Agent** name is ![diagnostic-link-ok](./../../assets/screenshots/34_link_status.png), the backend endpoint (VUI-API or VUI-Core) is not reachable.
 :::

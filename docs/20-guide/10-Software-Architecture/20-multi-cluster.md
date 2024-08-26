@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Multi-cluster'
+sidebar_label: 'Multi cluster'
 sidebar_position: 20
 ---
 
