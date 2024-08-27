@@ -8,7 +8,7 @@ import rehypeKatex from 'rehype-katex';
 const config: Config = {
   title: 'VUI Simplify Your Velero Backups Management',
   tagline: 'Your all-in-one dashboard for Velero backups',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://vui.seriohub.com/',
@@ -327,6 +327,16 @@ ${content}
       matomoUrl: 'https://matomo.serio.cloud/',
       siteId: '3',
     },
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+
+    /*announcementBar: {
+      id: 'test',
+      content:
+        'test',
+      backgroundColor: '#20232a',
+      textColor: '#fff',
+      isCloseable: false,
+    },*/
   } satisfies Preset.ThemeConfig,
 
 };

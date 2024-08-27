@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: "Intuitive Dashboard",
-    Svg: require("@site/static/img/undraw_dashboard.svg").default,
+    Svg: require("@site/static/img/home-features/blue/undraw_dashboard.svg").default,
     description: (
       <>
         Access all your Velero backup information in one centralized,
@@ -22,7 +22,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Real-Time Alerts and Notifications",
-    Svg: require("@site/static/img/undraw_new_notifications.svg").default,
+    Svg: require("@site/static/img/home-features/blue/undraw_new_notifications.svg").default,
     description: (
       <>
         Stay informed with real-time alerts and notifications about the status
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Cron Heat Map Visualization",
-    Svg: require("@site/static/img/undraw_design_stats.svg").default,
+    Svg: require("@site/static/img/home-features/blue/undraw_design_stats.svg").default,
     description: (
       <>
         Visualize your backup activity with heat map. Identify peak usage times
@@ -43,7 +43,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Centralized Management for Multiple Clusters",
-    Svg: require("@site/static/img/undraw_server_cluster.svg").default,
+    Svg: require("@site/static/img/home-features/blue/undraw_server_cluster.svg").default,
     description: (
       <>
         Effortlessly manage and monitor backups across all your clusters from
@@ -53,7 +53,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "Simplified Storage Class Mapping",
-    Svg: require("@site/static/img/undraw_memory_storage.svg").default,
+    Svg: require("@site/static/img/home-features/blue/undraw_memory_storage.svg").default,
     description: (
       <>
         Easily map and manage storage classes across different environments.
@@ -64,7 +64,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: "S3 Repository Statistics and Restic Operations",
-    Svg: require("@site/static/img/undraw_product_iteration.svg").default,
+    Svg: require("@site/static/img/home-features/blue/undraw_product_iteration.svg").default,
     description: (
       <>
         Access statistics directly from your S3 repositories. Monitor storage
