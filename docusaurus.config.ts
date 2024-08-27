@@ -222,7 +222,7 @@ ${content}
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/vui-social-card.jpg',
+    image: 'img/vui-social-card.png',
     navbar: {
       title: 'Vui',
       logo: {
