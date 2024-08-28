@@ -1,0 +1,8 @@
+{
+  "label": "Features",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "Detailed list of VUI features"
+  }
+}

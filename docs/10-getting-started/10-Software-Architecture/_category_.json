@@ -1,6 +1,6 @@
 {
-  "label": "Software architecture",
-  "position": 10,
+  "label": "Blueprints",
+  "position": 2,
   "link": {
     "type": "generated-index",
     "description": "Single cluster o multi-cluster deployment?"

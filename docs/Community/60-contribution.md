@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Contribution'
+sidebar_label: 'How to contribute'
 sidebar_position: 60
 ---
 
