@@ -1,0 +1,27 @@
+---
+sidebar_label: "Contributors"
+sidebar_position: 60
+---
+
+import ContributorsList from "../../src/components/contributorList";
+import velero_helm from "../../src/data/velero-helm.json";
+import velero_api from "../../src/data/velero-api.json";
+import velero_watchdog from "../../src/data/velero-watchdog.json";
+import velero_ui from "../../src/data/velero-ui.json";
+import velero_docs from "../../src/data/velero-docs.json";
+
+# Project Contributors
+
+<ContributorsList title="Velero Helm" contributors={velero_helm} />
+
+<ContributorsList title="Velero API" contributors={velero_api} />
+
+<ContributorsList title="Velero Watchdog" contributors={velero_watchdog} />
+
+<ContributorsList title="Velero UI" contributors={velero_ui} />
+
+<ContributorsList title="Velero docs" contributors={velero_docs} />
+
+---
+
+Thank you for your work!
