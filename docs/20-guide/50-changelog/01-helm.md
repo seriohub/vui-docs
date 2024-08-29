@@ -2,7 +2,6 @@
 sidebar_label: 'Helm'
 sidebar_position: 1
 description: HELM changelog
-custom_edit_url: https://github.com/seriohub/velero-helm/blob/main/CHANGELOG.md
 ---
 # Change Log
 

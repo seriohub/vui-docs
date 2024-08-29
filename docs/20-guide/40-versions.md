@@ -2,7 +2,6 @@
 sidebar_label: 'Version'
 sidebar_position: 15
 description: 'Helm released versions'
-custom_edit_url: https://github.com/seriohub/velero-helm/blob/main/components.txt
 ---
 Below is the table of released Helm versions, application versions, and component versions.
 # Version Information

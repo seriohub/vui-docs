@@ -56,7 +56,6 @@ const config: Config = {
 sidebar_label: 'Helm'
 sidebar_position: 1
 description: HELM changelog
-custom_edit_url: https://github.com/seriohub/velero-helm/blob/main/CHANGELOG.md
 ---
 ${content}`,
           };
@@ -86,7 +85,6 @@ ${content}`,
 sidebar_label: 'API'
 sidebar_position: 2
 description: API changelog
-custom_edit_url: https://github.com/seriohub/velero-api/blob/main/CHANGELOG.md
 ---
 ${content}`,
           };
@@ -116,7 +114,6 @@ ${content}`,
 sidebar_label: 'UI'
 sidebar_position: 3
 description: UI changelog
-custom_edit_url: https://github.com/seriohub/velero-ui/blob/main/CHANGELOG.md
 ---
 ${content}`,
           };
@@ -146,7 +143,6 @@ ${content}`,
 sidebar_label: 'Watchdog'
 sidebar_position: 4
 description: Watchdog changelog
-custom_edit_url: https://github.com/seriohub/velero-watchdog/blob/main/CHANGELOG.md
 ---
 ${content}`,
           };
@@ -176,7 +172,6 @@ ${content}`,
 sidebar_label: 'Version'
 sidebar_position: 15
 description: 'Helm released versions'
-custom_edit_url: https://github.com/seriohub/velero-helm/blob/main/components.txt
 ---
 Below is the table of released Helm versions, application versions, and component versions.
 ${content}
@@ -199,8 +194,7 @@ ${content}
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/seriohub/velero-docs/blob/main/',
+          // editUrl: null, //'https://github.com/seriohub/velero-docs/blob/main/',
           path: 'docs',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],

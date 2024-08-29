@@ -2,7 +2,6 @@
 sidebar_label: 'API'
 sidebar_position: 2
 description: API changelog
-custom_edit_url: https://github.com/seriohub/velero-api/blob/main/CHANGELOG.md
 ---
 # Changelog
 
