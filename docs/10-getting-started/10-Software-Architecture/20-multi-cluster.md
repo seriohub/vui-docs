@@ -12,7 +12,7 @@ This component routes user requests exclusively to the active connection.
 The VUI-Core component is not yet released
 :::
 
-![software-architecture-mc](./../../assets/screenshots/21_sa_VUI_Core.png)
+![software-architecture-mc](./../../assets/screenshots/21_sa_VUI_Core.gif)
 
 :::info
 The **Presentation layer** and the **Gateway layer** must be deployed once, possibly in the same cluster. The **Logical layer** runs as an agent and can be deployed several times in a different clusters.

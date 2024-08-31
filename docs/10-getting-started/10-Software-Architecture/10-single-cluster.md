@@ -14,4 +14,4 @@ The software architecture of the VUI project is organized into the following lay
 
 Each element of the project is developed as a indipendent service
 
-![software-architecture-sc](./../../assets/screenshots/20_sa_VUI.png)
+![software-architecture-sc](./../../assets/screenshots/20_sa_VUI.gif)
