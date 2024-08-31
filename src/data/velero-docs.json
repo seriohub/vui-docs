@@ -18,7 +18,7 @@
     "received_events_url": "https://api.github.com/users/davideserio/received_events",
     "type": "User",
     "site_admin": false,
-    "contributions": 23
+    "contributions": 24
   },
   {
     "login": "lucianoserio",
@@ -40,5 +40,26 @@
     "type": "User",
     "site_admin": false,
     "contributions": 8
+  },
+  {
+    "login": "matteo-convertino",
+    "id": 74453395,
+    "node_id": "MDQ6VXNlcjc0NDUzMzk1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/74453395?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/matteo-convertino",
+    "html_url": "https://github.com/matteo-convertino",
+    "followers_url": "https://api.github.com/users/matteo-convertino/followers",
+    "following_url": "https://api.github.com/users/matteo-convertino/following{/other_user}",
+    "gists_url": "https://api.github.com/users/matteo-convertino/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/matteo-convertino/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/matteo-convertino/subscriptions",
+    "organizations_url": "https://api.github.com/users/matteo-convertino/orgs",
+    "repos_url": "https://api.github.com/users/matteo-convertino/repos",
+    "events_url": "https://api.github.com/users/matteo-convertino/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/matteo-convertino/received_events",
+    "type": "User",
+    "site_admin": false,
+    "contributions": 1
   }
 ]
