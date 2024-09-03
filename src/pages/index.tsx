@@ -49,12 +49,6 @@ export default function Home(): JSX.Element {
           sizes="any"
           href="img/favicon.svg"
         />*/
-        <link
-          rel="icon"
-          type="image/svg+xml"
-          sizes="any"
-          href="img/favicon.svg"
-        />
         }
         
       </Head>
