@@ -35,7 +35,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       // title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
+      description="An opensource VUI for Velero backup"
     >
       <Head>
         <meta property="og:url" content="https://vui.seriohub.com" />
@@ -48,7 +48,15 @@ export default function Home(): JSX.Element {
           type="image/svg+xml"
           sizes="any"
           href="img/favicon.svg"
-        />*/}
+        />*/
+        <link
+          rel="icon"
+          type="image/svg+xml"
+          sizes="any"
+          href="img/favicon.svg"
+        />
+        }
+        
       </Head>
       <HomepageHeader/>
       <main>
