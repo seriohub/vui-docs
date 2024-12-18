@@ -66,6 +66,14 @@ Follow these steps:
     helm install -f values-override.yaml vui seriohub-velero/vui -n velero-ui
     ```
 
+    :::note
+    default user:
+
+    username: **admin**
+
+    password: **admin**
+    :::
+
 6. Upgrade (In the case of changes or updates):
 
     ``` bash

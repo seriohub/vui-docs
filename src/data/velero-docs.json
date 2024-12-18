@@ -17,8 +17,9 @@
     "events_url": "https://api.github.com/users/davideserio/events{/privacy}",
     "received_events_url": "https://api.github.com/users/davideserio/received_events",
     "type": "User",
+    "user_view_type": "public",
     "site_admin": false,
-    "contributions": 25
+    "contributions": 27
   },
   {
     "login": "lucianoserio",
@@ -38,8 +39,9 @@
     "events_url": "https://api.github.com/users/lucianoserio/events{/privacy}",
     "received_events_url": "https://api.github.com/users/lucianoserio/received_events",
     "type": "User",
+    "user_view_type": "public",
     "site_admin": false,
-    "contributions": 8
+    "contributions": 10
   },
   {
     "login": "matteo-convertino",
@@ -59,6 +61,7 @@
     "events_url": "https://api.github.com/users/matteo-convertino/events{/privacy}",
     "received_events_url": "https://api.github.com/users/matteo-convertino/received_events",
     "type": "User",
+    "user_view_type": "public",
     "site_admin": false,
     "contributions": 1
   }
