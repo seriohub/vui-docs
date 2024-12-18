@@ -35,7 +35,7 @@ Following are some screenshots of Vui.
 
 The project is developed, tested and put into production on several clusters with the following configurations:
 
-- Kubernetes v1.28.x
+- Kubernetes v1.28.x/v1.30.x
 - Velero Server 1.11.1/Client v1.11.1
 - Velero Server 1.12.1/Client v1.12.1
 - Velero Server 1.13.2/Client v1.13.2
