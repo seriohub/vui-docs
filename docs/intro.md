@@ -3,7 +3,19 @@ sidebar_label: 'Introduction'
 sidebar_position: 1
 ---
 
+import CustomTip from '/src/components/openSourceTip';
+
+
 # Introduction
+
+<CustomTip>
+If this project has been helpful to you and made your work easier, consider contributing to help us make it even better.
+You can contribute in many ways: by reporting bugs, suggesting new features, improving the documentation, or making a donation. Every little contribution makes a difference!
+
+A heartfelt thank you to all our [sponsors](/sponsors/sponsors) and [backers](/sponsors/sponsors#backers) who support this project.
+
+[BECOME A SPONSOR](https://github.com/sponsors/davideserio)
+</CustomTip>
 
 :::important
 This is the first version of the documentation for the VUI project. It may be incomplete or lack certain details. We appreciate your understanding and welcome any feedback to improve its quality.
@@ -37,7 +49,7 @@ The Vui project was created to simplify various Velero backup operations through
 - Multi cluster monitoring (require the core)
 - Notifications
 
-Please read [overview](./10-getting-started/01-overview.md) for more details and screenshots.
+Please read [overview](/docs/getting-started/overview.md) for more details and screenshots.
 
 ## Installation
 

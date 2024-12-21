@@ -1,0 +1,5 @@
+.heart .admonition-title::before {
+    content: "❤️";
+    font-size: 1.2em;
+    margin-right: 8px;
+}

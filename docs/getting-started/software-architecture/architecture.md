@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Overview'
+sidebar_label: 'Architecture'
 sidebar_position: 1
 ---
 
-# Overview
+# Architecture
 
 The VUI project was developed with Cloud-native architecture in mind. From the outset, the goal was to create a project composed of multiple microservices that could be easily deployed on Kubernetes clusters, ensuring straightforward maintenance and facilitating future enhancements.
 

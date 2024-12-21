@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'How to contribute'
-sidebar_position: 60
+sidebar_position: 1
 ---
 
 # Contribution Guidelines
@@ -34,6 +34,6 @@ Thank you for considering contributing to our project! Here are some guidelines 
 ## Code of Conduct
 
 - Be respectful and considerate in your interactions with other contributors.
-- Follow our [Code of Conduct](70-code-of-conduct.md).
+- Follow our [Code of Conduct](code-of-conduct.md).
 
 We appreciate your contributions and look forward to working with you!

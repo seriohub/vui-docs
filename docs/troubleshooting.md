@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Troubleshooting'
-sidebar_position: 40
+sidebar_position: 30
 ---
 
 # Troubleshooting

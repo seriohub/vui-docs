@@ -1,0 +1,36 @@
+/* src/components/CustomStyles.module.css */
+.customTip {
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    padding: 16px;
+    background-color: #ffcccc; /* Sfondo rosso chiaro */
+    color: #333; /* Colore del testo */
+    margin-bottom: 50px;
+}
+
+.customTipTitle {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0;
+    color: #ff4757; /* Colore rosso scuro per il titolo */
+}
+
+.customTipTitle::before {
+    content: "❤️";
+    margin-right: 8px;
+}
+
+/* Stili per i link all'interno di customTip */
+.customTip a {
+    color: #d6336c; /* Rosa intenso per i link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.customTip a:hover,
+.customTip a:focus {
+    color: #a32650; /* Colore più scuro al passaggio del mouse */
+    text-decoration: underline;
+}

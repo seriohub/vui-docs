@@ -27,5 +27,3 @@ Below is the table of released Helm versions, application versions, and componen
 | 0.1.2      | 0.1.2         | 0.1.9  | 0.1.8  | 0.1.1     |
 | 0.1.1      | 0.1.1         | 0.1.8  | 0.1.8  | 0.1.0     |
 | 0.1.0      | 0.1.0         | 0.1.7  | 0.1.7  | dev       |
-
-              

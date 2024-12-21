@@ -5,6 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
+// Import plugins from an external file
+import { plugins } from './plugins';
+
 const config: Config = {
   title: 'VUI Simplify Your Velero Backups Management',
   tagline: 'Your all-in-one dashboard for Velero backups',
@@ -34,156 +37,7 @@ const config: Config = {
     locales: ['en'],
   },
 
-  plugins: [
-    'docusaurus-plugin-matomo',
-    [
-      "docusaurus-plugin-remote-content",
-      {
-        // options here
-        name: "helm-changelog", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-helm/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "docs/20-guide/50-changelog", // the base directory to output to.
-        documents: ["CHANGELOG.md"], // the file names to download
-        modifyContent(filename, content) {
-          // This is used to update a specific document. You can add more complexity here for many documents.
-          //if (filename.includes("Post-Intent-System")) {
-          return {
-            // Match this to the name but with .md (the new file)
-            filename: "01-helm.md",
-            // Here we update to add a title to the page.
-            // The content item contains all of the markdown from the file
-            content: `---
-sidebar_label: 'Helm'
-sidebar_position: 1
-description: HELM changelog
----
-${content}`,
-          };
-          //}
-          // we don't want to modify this item, since it doesn't contain "README" in the name
-          //return undefined;
-        },
-      },
-    ],
-    [
-      "docusaurus-plugin-remote-content",
-      {
-        // options here
-        name: "api-changelog", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-api/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "docs/20-guide/50-changelog", // the base directory to output to.
-        documents: ["CHANGELOG.md"], // the file names to download
-        modifyContent(filename, content) {
-          // This is used to update a specific document. You can add more complexity here for many documents.
-          //if (filename.includes("Post-Intent-System")) {
-          return {
-            // Match this to the name but with .md (the new file)
-            filename: "02-api.md",
-            // Here we update to add a title to the page.
-            // The content item contains all of the markdown from the file
-            content: `---
-sidebar_label: 'API'
-sidebar_position: 2
-description: API changelog
----
-${content}`,
-          };
-          //}
-          // we don't want to modify this item, since it doesn't contain "README" in the name
-          //return undefined;
-        },
-      },
-    ],
-    [
-      "docusaurus-plugin-remote-content",
-      {
-        // options here
-        name: "ui-changelog", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-ui/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "docs/20-guide/50-changelog", // the base directory to output to.
-        documents: ["CHANGELOG.md"], // the file names to download
-        modifyContent(filename, content) {
-          // This is used to update a specific document. You can add more complexity here for many documents.
-          //if (filename.includes("Post-Intent-System")) {
-          return {
-            // Match this to the name but with .md (the new file)
-            filename: "03-ui.md",
-            // Here we update to add a title to the page.
-            // The content item contains all of the markdown from the file
-            content: `---
-sidebar_label: 'UI'
-sidebar_position: 3
-description: UI changelog
----
-${content}`,
-          };
-          //}
-          // we don't want to modify this item, since it doesn't contain "README" in the name
-          //return undefined;
-        },
-      },
-    ],
-    [
-      "docusaurus-plugin-remote-content",
-      {
-        // options here
-        name: "watchdog-changelog", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-watchdog/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "docs/20-guide/50-changelog", // the base directory to output to.
-        documents: ["CHANGELOG.md"], // the file names to download
-        modifyContent(filename, content) {
-          // This is used to update a specific document. You can add more complexity here for many documents.
-          //if (filename.includes("Post-Intent-System")) {
-          return {
-            // Match this to the name but with .md (the new file)
-            filename: "04-watchdog.md",
-            // Here we update to add a title to the page.
-            // The content item contains all of the markdown from the file
-            content: `---
-sidebar_label: 'Watchdog'
-sidebar_position: 4
-description: Watchdog changelog
----
-${content}`,
-          };
-          //}
-          // we don't want to modify this item, since it doesn't contain "README" in the name
-          //return undefined;
-        },
-      },
-    ],
-    [
-      "docusaurus-plugin-remote-content",
-      {
-        // options here
-        name: "helm-components", // used by CLI, must be path safe
-        sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-helm/main/", // the base url for the markdown (gets prepended to all of the documents when fetching)
-        outDir: "docs/20-guide", // the base directory to output to.
-        documents: ["components.txt"], // the file names to download
-        modifyContent(filename, content) {
-          // This is used to update a specific document. You can add more complexity here for many documents.
-          //if (filename.includes("Post-Intent-System")) {
-          return {
-            // Match this to the name but with .md (the new file)
-            filename: "40-versions.md",
-            // Here we update to add a title to the page.
-            // The content item contains all of the markdown from the file
-            content: `---
-sidebar_label: 'Version'
-sidebar_position: 15
-description: 'Helm released versions'
----
-Below is the table of released Helm versions, application versions, and component versions.
-${content}
-              `,
-          };
-          //}
-          // we don't want to modify this item, since it doesn't contain "README" in the name
-          //return undefined;
-        },
-      },
-    ],
-  ],
+  plugins: plugins,
 
   presets: [
     [
@@ -218,9 +72,9 @@ ${content}
     // Replace with your project's social card
     image: 'img/vui-social-card.png',
     navbar: {
-      title: 'Vui',
+      title: 'VUI',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'VUI Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -230,7 +84,9 @@ ${content}
           position: 'left',
           label: 'Docs',
         },
-        /*{ to: '/blog', label: 'Blog', position: 'left' },*/
+        { to: '/community/contribution', label: 'Community', position: 'left' },
+        { to: '/sponsors/sponsors', label: 'Sponsors', position: 'left' },
+        { to: '/contacts/contacts', label: 'Contacts', position: 'left' },
         {
           href: 'https://github.com/orgs/seriohub/repositories',
           label: 'GitHub',
@@ -279,7 +135,7 @@ ${content}
               to: '/blog',
             },*/
             {
-              label: 'HELM',
+              label: 'Helm',
               href: 'https://github.com/seriohub/velero-helm',
             },
             {
@@ -331,6 +187,7 @@ ${content}
       textColor: '#fff',
       isCloseable: false,
     },*/
+    
   } satisfies Preset.ThemeConfig,
 
 };
