@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvelero_docs=self.webpackChunkvelero_docs||[]).push([[6930],{4303:s=>{s.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"sponsors"}')}}]);
