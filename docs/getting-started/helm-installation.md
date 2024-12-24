@@ -64,28 +64,34 @@ Follow these steps:
 
     :::important
     If you want to use a release candidate version of the components, add these lines in the values-override.yaml
-         ``` 
+        ```
         # api
         api:
-        apiServer:
+          apiServer:
             image:
-            tag: dev
+              tag: dev
             imagePullPolicy: Always
         # ui
         ui:
-        webServer:
+          webServer:
             image:
-            tag: dev
+              tag: dev
             imagePullPolicy: Always
-        # report 
-        veleroWatchdogReport:
+        # watchdog daemon
+        watchdog:
+          veleroMonitoring:
             image:
-            tag: dev
+              tag: dev
             imagePullPolicy: Always
-         ```
+        # watchdog report
+        report:
+          veleroWatchdogReport:
+            image:
+              tag: dev
+            imagePullPolicy: Always
+        ```
     The images contain the latest updates or improvements that will be released after a testing phase
     :::
-
 
 
     ``` bash
