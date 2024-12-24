@@ -58,9 +58,35 @@ Follow these steps:
 
     For a simplified installation, you can refer to the values-override.yaml file, which defines the essential parameters for proper installation.
 
-    :::important
+    :::tip
     Make sure to customize the values in the [values-override.yaml](https://github.com/seriohub/velero-helm/blob/main/values-override.yaml) file according to your requirements before running the installation command.
     :::
+
+    :::important
+    If you want to use a release candidate version of the components, add these lines in the values-override.yaml
+         ``` 
+        # api
+        api:
+        apiServer:
+            image:
+            tag: dev
+            imagePullPolicy: Always
+        # ui
+        ui:
+        webServer:
+            image:
+            tag: dev
+            imagePullPolicy: Always
+        # report 
+        veleroWatchdogReport:
+            image:
+            tag: dev
+            imagePullPolicy: Always
+         ```
+    The images contain the latest updates or improvements that will be released after a testing phase
+    :::
+
+
 
     ``` bash
     helm install -f values-override.yaml vui seriohub-velero/vui -n velero-ui
