@@ -4,7 +4,7 @@ export const pluginsChangelog = [
     {
       name: "helm-changelog",
       sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-helm/main/",
-      outDir: "docs/guide/changelog",
+      outDir: "releases/changelog",
       documents: ["CHANGELOG.md"],
       modifyContent(filename, content) {
         return {
@@ -24,7 +24,7 @@ ${content}`,
     {
       name: "api-changelog",
       sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-api/main/",
-      outDir: "docs/guide/changelog",
+      outDir: "releases/changelog",
       documents: ["CHANGELOG.md"],
       modifyContent(filename, content) {
         return {
@@ -44,7 +44,7 @@ ${content}`,
     {
       name: "ui-changelog",
       sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-ui/main/",
-      outDir: "docs/guide/changelog",
+      outDir: "releases/changelog",
       documents: ["CHANGELOG.md"],
       modifyContent(filename, content) {
         return {
@@ -64,7 +64,7 @@ ${content}`,
     {
       name: "watchdog-changelog",
       sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-watchdog/main/",
-      outDir: "docs/guide/changelog",
+      outDir: "releases/changelog",
       documents: ["CHANGELOG.md"],
       modifyContent(filename, content) {
         return {
@@ -84,11 +84,11 @@ ${content}`,
     {
       name: "helm-components",
       sourceBaseUrl: "https://raw.githubusercontent.com/seriohub/velero-helm/main/",
-      outDir: "docs/guide",
+      outDir: "releases/",
       documents: ["components.txt"],
       modifyContent(filename, content) {
         return {
-          filename: "versions.md",
+          filename: "releases.md",
           content: `---
 sidebar_label: 'Version'
 sidebar_position: 15

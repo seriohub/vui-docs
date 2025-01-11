@@ -31,6 +31,14 @@ export const plugins = [
             sidebarPath: false
         },
     ],
-
+    [
+        '@docusaurus/plugin-content-docs',
+        {
+            id: 'releases',
+            path: 'releases',
+            routeBasePath: 'releases', // The base URL path for this folder
+            sidebarPath: require.resolve('./sidebars.js'), // Path to the sidebar configuration
+        },
+    ],
     ...pluginsChangelog
 ];
