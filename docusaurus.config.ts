@@ -84,8 +84,8 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        { to: '/releases/releases', label: 'What\'s New', position: 'left' },
-        { to: '/community/contribution', label: 'Community', position: 'left' },
+        { to: '/releases/changelog/helm', label: 'What\'s New', position: 'left' },
+        { to: '/community/contributors', label: 'Community', position: 'left' },
         { to: '/sponsors/sponsors', label: 'Sponsors', position: 'left' },
         { to: '/contacts/contacts', label: 'Contacts', position: 'left' },
         {
@@ -188,7 +188,7 @@ const config: Config = {
       textColor: '#fff',
       isCloseable: false,
     },*/
-    
+
   } satisfies Preset.ThemeConfig,
 
 };

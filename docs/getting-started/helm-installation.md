@@ -62,7 +62,7 @@ Follow these steps:
     Make sure to customize the values in the [values-override.yaml](https://github.com/seriohub/velero-helm/blob/main/values-override.yaml) file according to your requirements before running the installation command.
     :::
 
-    :::important
+    :::note
     If you want to use a release candidate version of the components, add these lines in the values-override.yaml
         ```
         # api

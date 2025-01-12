@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'How to contribute'
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Contribution Guidelines
