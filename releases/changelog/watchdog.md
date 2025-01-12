@@ -3,7 +3,7 @@ sidebar_label: 'Watchdog'
 sidebar_position: 4
 description: Watchdog changelog
 ---
-# Change Log
+# Changelog
 All notable changes to this project will be documented in this file.
 
 ***
