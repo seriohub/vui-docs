@@ -94,7 +94,7 @@ sidebar_label: 'Version'
 sidebar_position: 15
 description: 'Helm released versions'
 ---
-Below is the table of released Helm versions, application versions, and component versions.
+Below is the table of released Helm versions, application versions, and component compatibility versions.
 ${content}`,
         };
       },
