@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://vui.seriohub.com/blog</id>
+    <title>VUI Simplify Your Velero Backups Management Blog</title>
+    <updated>2025-02-07T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://vui.seriohub.com/blog"/>
+    <subtitle>VUI Simplify Your Velero Backups Management Blog</subtitle>
+    <icon>https://vui.seriohub.com/img/favicon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Vui 0.1.19]]></title>
+        <id>https://vui.seriohub.com/blog/vui-0.1.19</id>
+        <link href="https://vui.seriohub.com/blog/vui-0.1.19"/>
+        <updated>2025-02-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Discover the latest enhancements, new features, and improvements in our latest release.]]></summary>
+        <content type="html"><![CDATA[<p>🚀 A New Version is Here!</p>
+<p>We're thrilled to announce the latest version of our platform, bringing you powerful new features, optimizations, and performance improvements! Here’s what’s new:</p>
+<p>🚀 New Features</p>
+<ul>
+<li>
+<p>⚙️ User Notification Preferences: Users can now configure their notification preferences, ensuring they receive only the alerts that matter to them.</p>
+</li>
+<li>
+<p>🔔 Apprise Integration: We’ve integrated Apprise to streamline notification delivery across various channels.</p>
+</li>
+<li>
+<p>🛠️ Apprise Configuration Page: A dedicated page for configuring Apprise settings, making it easier to set up and manage.</p>
+</li>
+</ul>
+<p>🔧 Improvements</p>
+<ul>
+<li>
+<p>✨ UI &amp; Performance Enhancements: Various optimizations and minor fixes have been implemented to enhance the frontend experience.</p>
+</li>
+<li>
+<p>📦 Updated Dependencies: We’ve upgraded multiple dependencies to their latest stable versions to improve security and performance.</p>
+</li>
+<li>
+<p>📜 Enhanced Logging System: Debugging and traceability have been improved with a more robust logging system.</p>
+</li>
+<li>
+<p>🌐 Better Connection Management: The connection manager has been optimized for increased stability and performance.</p>
+</li>
+</ul>
+<p>This release is all about giving you more control, better performance, and an improved user experience. We’re always working to enhance the platform, and we appreciate your feedback!</p>
+<p>Try out the new features today and let us know what you think. 🚀</p>]]></content>
+        <author>
+            <name>Davide Serio</name>
+            <uri>https://github.com/davideserio</uri>
+        </author>
+    </entry>
+</feed>
