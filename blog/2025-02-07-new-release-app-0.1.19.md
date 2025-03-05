@@ -33,5 +33,3 @@ We're thrilled to announce the latest version of our platform, bringing you powe
 - 🌐 Better Connection Management: The connection manager has been optimized for increased stability and performance.
 
 This release is all about giving you more control, better performance, and an improved user experience. We’re always working to enhance the platform, and we appreciate your feedback!
-
-Try out the new features today and let us know what you think. 🚀

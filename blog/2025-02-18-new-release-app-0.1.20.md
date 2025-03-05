@@ -32,4 +32,4 @@ The release of Vui 0.1.20 introduces major authentication improvements, UI enhan
 
 - 🏗️ ARM64 Docker images are now available! A dependency issue in the UI that previously caused build failures has been fixed, enabling support for ARM64 architectures.
 
-This update enhances security, improves usability, and expands deployment flexibility. Try it out and let us know what you think! 🚀
+This update enhances security, improves usability, and expands deployment flexibility.
