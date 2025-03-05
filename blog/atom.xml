@@ -2,11 +2,60 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vui.seriohub.com/blog</id>
     <title>VUI Simplify Your Velero Backups Management Blog</title>
-    <updated>2025-02-18T00:00:00.000Z</updated>
+    <updated>2025-03-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vui.seriohub.com/blog"/>
     <subtitle>VUI Simplify Your Velero Backups Management Blog</subtitle>
     <icon>https://vui.seriohub.com/img/favicon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[Vui 0.2.0]]></title>
+        <id>https://vui.seriohub.com/blog/vui-0.2.0</id>
+        <link href="https://vui.seriohub.com/blog/vui-0.2.0"/>
+        <updated>2025-03-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Discover the latest enhancements, new features, and improvements in our latest release.]]></summary>
+        <content type="html"><![CDATA[<p>🚀 A New Version is Here!</p>
+<p>The release of Vui 0.2.0 introduces significant architectural improvements, new features, and user experience enhancements. This update focuses on increasing efficiency, usability, and providing deeper insights into backup data.</p>
+<p>🚀 Major Updates</p>
+<ul>
+<li>Refactored Architecture: The application no longer relies on the Velero CLI. Instead, all operations now interact directly with Velero’s APIs, resulting in improved efficiency and maintainability.</li>
+</ul>
+<p>🆕 New Features</p>
+<ul>
+<li>
+<p>Backup Comparison Prototype: Introduced an experimental feature allowing users to compare backups against the current Kubernetes manifests, providing better tracking of changes.</p>
+</li>
+<li>
+<p>Clean Manifest View: A new feature enables users to visualize clean Kubernetes manifests for improved clarity and usability.</p>
+</li>
+<li>
+<p>Backup Download: Users can now download backups directly from the UI for easier data retrieval.</p>
+</li>
+</ul>
+<p>🛠 Improvements</p>
+<ul>
+<li>
+<p>Enhanced Request/Response Typing: Improved type definitions for API requests and responses, leading to better reliability and maintainability.</p>
+</li>
+<li>
+<p>Improved Error Handling: Enhanced error management provides greater stability and easier debugging.</p>
+</li>
+<li>
+<p>Enhanced Forms: The UI has been refined to improve the experience when creating and modifying backups, schedules, restores, backup locations, and volume locations.</p>
+</li>
+<li>
+<p>Refined Resource Views: Enhanced the display of resource properties for better readability and usability.</p>
+</li>
+</ul>
+<p>🎨 General UI Enhancements</p>
+<ul>
+<li>Various UI refinements have been made to deliver a smoother and more intuitive experience.</li>
+</ul>
+<p>This release brings major architectural advancements and usability improvements, making it easier and more efficient to manage backups.</p>]]></content>
+        <author>
+            <name>Davide Serio</name>
+            <uri>https://github.com/davideserio</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vui 0.1.20]]></title>
         <id>https://vui.seriohub.com/blog/vui-0.1.20</id>
@@ -38,7 +87,7 @@
 <ul>
 <li>🏗️ ARM64 Docker images are now available! A dependency issue in the UI that previously caused build failures has been fixed, enabling support for ARM64 architectures.</li>
 </ul>
-<p>This update enhances security, improves usability, and expands deployment flexibility. Try it out and let us know what you think! 🚀</p>]]></content>
+<p>This update enhances security, improves usability, and expands deployment flexibility.</p>]]></content>
         <author>
             <name>Davide Serio</name>
             <uri>https://github.com/davideserio</uri>
@@ -79,8 +128,7 @@
 <p>🌐 Better Connection Management: The connection manager has been optimized for increased stability and performance.</p>
 </li>
 </ul>
-<p>This release is all about giving you more control, better performance, and an improved user experience. We’re always working to enhance the platform, and we appreciate your feedback!</p>
-<p>Try out the new features today and let us know what you think. 🚀</p>]]></content>
+<p>This release is all about giving you more control, better performance, and an improved user experience. We’re always working to enhance the platform, and we appreciate your feedback!</p>]]></content>
         <author>
             <name>Davide Serio</name>
             <uri>https://github.com/davideserio</uri>

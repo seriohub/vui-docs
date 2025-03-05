@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkvelero_docs=self.webpackChunkvelero_docs||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Vui 0.1.20","permalink":"/blog/vui-0.1.20","unlisted":false,"date":"2025-02-18T00:00:00.000Z"},{"title":"Vui 0.1.19","permalink":"/blog/vui-0.1.19","unlisted":false,"date":"2025-02-07T00:00:00.000Z"}]}')}}]);
