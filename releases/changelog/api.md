@@ -9,6 +9,38 @@ All notable changes to this project will be documented in this file.
 
 ***
 
+## [v0.2.4] - 2025-04-03
+
+🆕 New Features
+- Added pod logs feature
+
+🔧 Improvements
+- Improved visual log output
+
+## [v0.2.3] - 2025-03-19
+
+🛠️ ️Fixes
+- Fixed retrieval of Velero version
+
+## [v0.2.2] - 2025-03-13
+
+🆕 New Features
+- Implemented event-driven UI management via socket communication
+
+🛠️ Fixes
+- Fixed logs download
+- Fixed backup creation from schedule
+
+## [v0.2.1] - 2025-03-07
+
+🆕 New Features
+- Added BSL update feature
+- Added VSL update feature
+
+🛠️ Fixes
+- Fixed logs download
+- Fixed backup creation from schedule
+
 ## [v0.2.0] - 2025-03-04
 
 🚀 Major Updates
@@ -186,6 +218,10 @@ Improvements
 ***
 
 ## Tags
+
+[v0.2.2] : [https://github.com/seriohub/velero-api/releases/tag/v0.2.2](https://github.com/seriohub/velero-api/releases/tag/v0.2.2)
+
+[v0.2.1] : [https://github.com/seriohub/velero-api/releases/tag/v0.2.1](https://github.com/seriohub/velero-api/releases/tag/v0.2.1)
 
 [v0.2.0] : [https://github.com/seriohub/velero-api/releases/tag/v0.2.0](https://github.com/seriohub/velero-api/releases/tag/v0.2.0)
 

@@ -19,7 +19,7 @@
     "type": "User",
     "user_view_type": "public",
     "site_admin": false,
-    "contributions": 41
+    "contributions": 44
   },
   {
     "login": "lucianoserio",
@@ -63,6 +63,6 @@
     "type": "User",
     "user_view_type": "public",
     "site_admin": false,
-    "contributions": 1
+    "contributions": 2
   }
 ]

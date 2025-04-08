@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Installation'
+sidebar_label: 'Helm'
 sidebar_position: 3
 ---
 

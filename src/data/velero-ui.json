@@ -19,7 +19,7 @@
     "type": "User",
     "user_view_type": "public",
     "site_admin": false,
-    "contributions": 294
+    "contributions": 348
   },
   {
     "login": "alex-bes-ccl",
@@ -38,6 +38,28 @@
     "repos_url": "https://api.github.com/users/alex-bes-ccl/repos",
     "events_url": "https://api.github.com/users/alex-bes-ccl/events{/privacy}",
     "received_events_url": "https://api.github.com/users/alex-bes-ccl/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false,
+    "contributions": 1
+  },
+  {
+    "login": "mfyuce",
+    "id": 41781,
+    "node_id": "MDQ6VXNlcjQxNzgx",
+    "avatar_url": "https://avatars.githubusercontent.com/u/41781?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/mfyuce",
+    "html_url": "https://github.com/mfyuce",
+    "followers_url": "https://api.github.com/users/mfyuce/followers",
+    "following_url": "https://api.github.com/users/mfyuce/following{/other_user}",
+    "gists_url": "https://api.github.com/users/mfyuce/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/mfyuce/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/mfyuce/subscriptions",
+    "organizations_url": "https://api.github.com/users/mfyuce/orgs",
+    "repos_url": "https://api.github.com/users/mfyuce/repos",
+    "events_url": "https://api.github.com/users/mfyuce/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/mfyuce/received_events",
     "type": "User",
     "user_view_type": "public",
     "site_admin": false,

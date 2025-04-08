@@ -5,37 +5,38 @@ sidebar_position: 1
 
 # Overview
 
-Vui provides a web interface to interact with Velero, simplifying the following operations:
+VUI provides a web interface for interacting with Velero, simplifying the following operations:
 
-- Switching between different clusters (requires core)
-- Backup management
-- Restore management
-- Schedule management
-- Retrieving backup location information
-- Retrieving snapshot location information
-- Storage class mapping
+- Switching between different clusters (requires Velero-Core)
+- Backups management
+- Restores management
+- Schedules management
+- Pod Volume Backup management
+- Pod Volume Restore management
+- Real-time Backups/Restores monitoring
+- Real time Server Status Requests data
+- Download Requests management
+- Real time Delete Backup Requests data
+- Storage class map
 - Restic features (check locks, unlock, unlock --remove-all)
+- Multi cluster monitoring (require the core)
+- Notifications
 
-Below is a brief description of the modules that make up the VUI project:
+## VUI Components
 
-- **Velero-API** is the agent to be installed on each cluster. Velero-API is designed to communicate with Kubernetes and the Velero client within the Kubernetes environment.
-- **Velero-UI** is the web interface. The UI interface can be used by connecting directly to the agents or to the core for centralized management.
-- **Velero-Watchdog** is the microservice responsible for monitoring the status of Velero in Kubernetes environments and alerting when something is not working:
-  - Backups status monitoring
-  - Schedules change monitoring
-  - Notification alert for immediate action. Available plugins:
-    - Email
-    - Telegram
-    - Slack
-- **Velero-Core** is the core component that enables centralized multi-cluster management. Through the core, you can switch between clusters and view the Velero status of all clusters where the agent is deployed via the core dashboard. `Not released`
+VUI consists of multiple modules, each serving a specific function:
 
-Following are some screenshots of Vui.
+- **Velero-API** – An agent installed on each cluster.
+- **Velero-UI** – The web interface. It can connect either directly to the agents or to Velero-Core for centralized management.
+- **Velero-Watchdog** – A microservice that monitors Velero’s status in Kubernetes environments and triggers alerts when issues arise:
+  - Backup status monitoring
+  - Schedule change monitoring
+  - Notification alerts for immediate action
+- **Velero-Core** – The central component for multi-cluster management. Through Velero-Core, you can switch between clusters and monitor Velero’s status across all connected clusters via a centralized dashboard. `Not yet released`.
 
 ## Environment
 
-The project is developed, tested and put into production on several clusters with the following configurations:
+The project has been developed, tested, and deployed across multiple clusters with the following configurations:
 
-- Kubernetes v1.28.x/v1.30.x
-- Velero Server 1.11.1/Client v1.11.1
-- Velero Server 1.12.1/Client v1.12.1
-- Velero Server 1.13.2/Client v1.13.2
+- **Kubernetes** ≥ v1.28.x
+- **Velero Server** ≥ v1.11.1

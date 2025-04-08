@@ -3,12 +3,12 @@ sidebar_label: 'Introduction'
 sidebar_position: 1
 ---
 
-import CustomTip from '/src/components/openSourceTip';
-
-
 # Introduction
 
+import CustomTip from '/src/components/openSourceTip';
+
 <CustomTip>
+
 If this project has been helpful to you and made your work easier, consider contributing to help us make it even better.
 You can contribute in many ways: by reporting bugs, suggesting new features, improving the documentation, or making a donation. Every little contribution makes a difference!
 
@@ -40,10 +40,15 @@ The Vui project was created to simplify various Velero backup operations through
 ## Features
 
 - Intuitive usability
-- Real-time dashboard and monitoring
 - Backups management
 - Restores management
 - Schedules management
+- Pod Volume Backup management
+- Pod Volume Restore management
+- Real-time Backups/Restores monitoring
+- Real time Server Status Requests data
+- Download Requests management
+- Real time Delete Backup Requests data
 - Storage class map
 - Restic features (check locks, unlock, unlock --remove-all)
 - Multi cluster monitoring (require the core)
@@ -53,4 +58,4 @@ Please read [overview](/docs/getting-started/overview.md) for more details and s
 
 ## Installation
 
-While YAML files are available for individual projects to facilitate installation via kubectl, it is highly recommended to use [Helm](https://github.com/seriohub/velero-helm) for [installation](getting-started/helm-installation). Helm automates many steps, streamlining the process.
+While YAML files are available for individual projects to facilitate installation via kubectl, it is highly recommended to use Helm for [installation](getting-started/installation/helm). Helm automates many steps, streamlining the process.

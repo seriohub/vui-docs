@@ -19,7 +19,7 @@
     "type": "User",
     "user_view_type": "public",
     "site_admin": false,
-    "contributions": 233
+    "contributions": 295
   },
   {
     "login": "lucianoserio",
@@ -60,6 +60,28 @@
     "repos_url": "https://api.github.com/users/dcaputo-harmoni/repos",
     "events_url": "https://api.github.com/users/dcaputo-harmoni/events{/privacy}",
     "received_events_url": "https://api.github.com/users/dcaputo-harmoni/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false,
+    "contributions": 1
+  },
+  {
+    "login": "aslafy-z",
+    "id": 8191198,
+    "node_id": "MDQ6VXNlcjgxOTExOTg=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/8191198?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/aslafy-z",
+    "html_url": "https://github.com/aslafy-z",
+    "followers_url": "https://api.github.com/users/aslafy-z/followers",
+    "following_url": "https://api.github.com/users/aslafy-z/following{/other_user}",
+    "gists_url": "https://api.github.com/users/aslafy-z/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/aslafy-z/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/aslafy-z/subscriptions",
+    "organizations_url": "https://api.github.com/users/aslafy-z/orgs",
+    "repos_url": "https://api.github.com/users/aslafy-z/repos",
+    "events_url": "https://api.github.com/users/aslafy-z/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/aslafy-z/received_events",
     "type": "User",
     "user_view_type": "public",
     "site_admin": false,

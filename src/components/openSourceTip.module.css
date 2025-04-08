@@ -3,18 +3,20 @@
     border: 1px solid #eaeaea;
     border-radius: 8px;
     padding: 16px;
-    background-color: #ffcccc; /* Sfondo rosso chiaro */
-    color: #333; /* Colore del testo */
-    margin-bottom: 50px;
+    background-color: #ffcccc; /* Body tip background */
+    color: #333; /* Text color */
+    margin-bottom: 30px;
+    border-left: 4px solid #ff4757;
 }
 
 .customTipTitle {
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 0;
-    color: #ff4757; /* Colore rosso scuro per il titolo */
+    color: #ff4757;
+    margin-bottom: 10px;
 }
 
 .customTipTitle::before {
@@ -22,15 +24,15 @@
     margin-right: 8px;
 }
 
-/* Stili per i link all'interno di customTip */
+/* style inside customTip */
 .customTip a {
-    color: #d6336c; /* Rosa intenso per i link */
+    color: #ff4757; /* Links color */
     text-decoration: none;
     font-weight: bold;
 }
 
 .customTip a:hover,
 .customTip a:focus {
-    color: #a32650; /* Colore più scuro al passaggio del mouse */
+    color: #a32650; /* Links hover color*/
     text-decoration: underline;
 }

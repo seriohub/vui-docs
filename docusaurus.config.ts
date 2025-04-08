@@ -53,14 +53,14 @@ const config: Config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/seriohub/velero-docs/blob/main/',
-        },
-        //blog: false,
+        //blog: {
+        //  showReadingTime: true,
+        //  // Please change this to your repo.
+        //  // Remove this to remove the "edit this page" links.
+        //  editUrl:
+        //    'https://github.com/seriohub/velero-docs/blob/main/',
+        //},
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -85,7 +85,7 @@ const config: Config = {
           label: 'Docs',
         },
         { to: '/releases/changelog/helm', label: 'What\'s New', position: 'left' },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        //{ to: 'blog', label: 'Blog', position: 'left'},
         { to: '/community/contributors', label: 'Community', position: 'left' },
         { to: '/sponsors/sponsors', label: 'Sponsors', position: 'left' },
         { to: '/contacts/contacts', label: 'Contacts', position: 'left' },
@@ -108,7 +108,7 @@ const config: Config = {
             },
             {
               label: 'Installation',
-              to: '/docs/getting-started/helm-installation',
+              to: '/docs/getting-started/installation/helm',
             },
           ],
         },
