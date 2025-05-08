@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>VUI Simplify Your Velero Backups Management Blog</title>
+        <link>https://vui.seriohub.com/blog</link>
+        <description>VUI Simplify Your Velero Backups Management Blog</description>
+        <lastBuildDate>Thu, 08 May 2025 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Vui 0.3.0]]></title>
+            <link>https://vui.seriohub.com/blog/chart-1.0.0</link>
+            <guid>https://vui.seriohub.com/blog/chart-1.0.0</guid>
+            <pubDate>Thu, 08 May 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[A major chart release introducing structural improvements, support for core components, and breaking changes.]]></description>
+            <content:encoded><![CDATA[<p>🚀 <strong>A Major Milestone for Deployment</strong></p>
+<p>We’re excited to announce the release of Chart 1.0.0, a significant step forward for deployment flexibility, clarity, and component modularity. This release introduces structural changes, new installation options, and support for advanced components.</p>
+<p>🚨 <strong>Breaking Changes</strong></p>
+<p>With this version, the Helm chart structure has been completely refactored. Deprecated fields have been removed, new required values introduced, and the entire layout optimized for clarity and maintainability.</p>
+<p>⚠️ This version is not backward-compatible with previous releases (e.g. 0.1.27). Please refer to the updated templates for <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/overview">scenario-based</a> installations.</p>
+<p>🆕 <strong>Core Support</strong></p>
+<p>This release introduces support for the new <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/core-cluster">core</a> component—a powerful foundation designed to extend the platform’s capabilities. While still in early stages, it represents a fundamental building block for advanced functionality.</p>
+<p>Organizations with access to this component can now deploy it directly via Helm. This marks an important step in our effort to offer modular extensibility to those contributing most actively to the project’s growth.</p>
+<p>🛠 <strong>Improvements &amp; Installation Scenarios</strong></p>
+<p>We’ve added dedicated templates for different usage contexts:</p>
+<ul>
+<li>Single cluster (standard)</li>
+<li>Single cluster No authentication</li>
+<li>Single cluster with LDAP authentication</li>
+<li>Core</li>
+<li>Core with LDAP authentication</li>
+<li>Agent-only</li>
+</ul>
+<p>These scenarios simplify the deployment process and offer a clearer starting point for varied infrastructures. The application can be deployed in many different ways using the values.yaml file; the templates provided are tailored to the most common and standard use cases.</p>
+<p>🔄 <strong>Component Updates</strong></p>
+<ul>
+<li>📦 appVersion updated to 0.3.0</li>
+<li>🚀 API updated to 0.2.5</li>
+<li>🎨 UI updated to 0.2.5</li>
+<li>🛡️ Watchdog updated to 0.1.8</li>
+</ul>
+<p>This release focuses on robustness, clarity, and forward compatibility. We encourage you to explore the new installation options and follow the evolving roadmap. As always, feedback and participation help shape what comes next. 🚀</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vui 0.2.0]]></title>
+            <link>https://vui.seriohub.com/blog/vui-0.2.0</link>
+            <guid>https://vui.seriohub.com/blog/vui-0.2.0</guid>
+            <pubDate>Wed, 05 Mar 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover the latest enhancements, new features, and improvements in our latest release.]]></description>
+            <content:encoded><![CDATA[<p>🚀 A New Version is Here!</p>
+<p>The release of Vui 0.2.0 introduces significant architectural improvements, new features, and user experience enhancements. This update focuses on increasing efficiency, usability, and providing deeper insights into backup data.</p>
+<p>🚀 Major Updates</p>
+<ul>
+<li>Refactored Architecture: The application no longer relies on the Velero CLI. Instead, all operations now interact directly with Velero’s APIs, resulting in improved efficiency and maintainability.</li>
+</ul>
+<p>🆕 New Features</p>
+<ul>
+<li>
+<p>Backup Comparison Prototype: Introduced an experimental feature allowing users to compare backups against the current Kubernetes manifests, providing better tracking of changes.</p>
+</li>
+<li>
+<p>Clean Manifest View: A new feature enables users to visualize clean Kubernetes manifests for improved clarity and usability.</p>
+</li>
+<li>
+<p>Backup Download: Users can now download backups directly from the UI for easier data retrieval.</p>
+</li>
+</ul>
+<p>🛠 Improvements</p>
+<ul>
+<li>
+<p>Enhanced Request/Response Typing: Improved type definitions for API requests and responses, leading to better reliability and maintainability.</p>
+</li>
+<li>
+<p>Improved Error Handling: Enhanced error management provides greater stability and easier debugging.</p>
+</li>
+<li>
+<p>Enhanced Forms: The UI has been refined to improve the experience when creating and modifying backups, schedules, restores, backup locations, and volume locations.</p>
+</li>
+<li>
+<p>Refined Resource Views: Enhanced the display of resource properties for better readability and usability.</p>
+</li>
+</ul>
+<p>🎨 General UI Enhancements</p>
+<ul>
+<li>Various UI refinements have been made to deliver a smoother and more intuitive experience.</li>
+</ul>
+<p>This release brings major architectural advancements and usability improvements, making it easier and more efficient to manage backups.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vui 0.1.20]]></title>
+            <link>https://vui.seriohub.com/blog/vui-0.1.20</link>
+            <guid>https://vui.seriohub.com/blog/vui-0.1.20</guid>
+            <pubDate>Tue, 18 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover the latest enhancements, new features, and improvements in our latest release.]]></description>
+            <content:encoded><![CDATA[<p>🚀 A New Version is Here!</p>
+<p>The release of Vui 0.1.20 introduces major authentication improvements, UI enhancements, and broader platform support. Here’s what’s new:</p>
+<p>🔒 Authentication &amp; Security Improvements</p>
+<ul>
+<li>
+<p>🔑 Added LDAP authentication and authorization for better directory service integration and access control.</p>
+</li>
+<li>
+<p>⚙️ Introduced an option for no authentication in environments where it's unnecessary.</p>
+</li>
+<li>
+<p>📂 Refactored security module files for better maintainability and structure.</p>
+</li>
+<li>
+<p>🔄 Enhanced session management for improved security and user experience.</p>
+</li>
+</ul>
+<p>🎨 UI &amp; Performance Enhancements</p>
+<ul>
+<li>🗑️ Removed dependency on next/font/google to resolve build errors in ARM Docker images.</li>
+</ul>
+<p>🚀 New Platform Support</p>
+<ul>
+<li>🏗️ ARM64 Docker images are now available! A dependency issue in the UI that previously caused build failures has been fixed, enabling support for ARM64 architectures.</li>
+</ul>
+<p>This update enhances security, improves usability, and expands deployment flexibility.</p>]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Vui 0.1.19]]></title>
+            <link>https://vui.seriohub.com/blog/vui-0.1.19</link>
+            <guid>https://vui.seriohub.com/blog/vui-0.1.19</guid>
+            <pubDate>Fri, 07 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Discover the latest enhancements, new features, and improvements in our latest release.]]></description>
+            <content:encoded><![CDATA[<p>🚀 A New Version is Here!</p>
+<p>We're thrilled to announce the latest version of our platform, bringing you powerful new features, optimizations, and performance improvements! Here’s what’s new:</p>
+<p>🚀 New Features</p>
+<ul>
+<li>
+<p>⚙️ User Notification Preferences: Users can now configure their notification preferences, ensuring they receive only the alerts that matter to them.</p>
+</li>
+<li>
+<p>🔔 Apprise Integration: We’ve integrated Apprise to streamline notification delivery across various channels.</p>
+</li>
+<li>
+<p>🛠️ Apprise Configuration Page: A dedicated page for configuring Apprise settings, making it easier to set up and manage.</p>
+</li>
+</ul>
+<p>🔧 Improvements</p>
+<ul>
+<li>
+<p>✨ UI &amp; Performance Enhancements: Various optimizations and minor fixes have been implemented to enhance the frontend experience.</p>
+</li>
+<li>
+<p>📦 Updated Dependencies: We’ve upgraded multiple dependencies to their latest stable versions to improve security and performance.</p>
+</li>
+<li>
+<p>📜 Enhanced Logging System: Debugging and traceability have been improved with a more robust logging system.</p>
+</li>
+<li>
+<p>🌐 Better Connection Management: The connection manager has been optimized for increased stability and performance.</p>
+</li>
+</ul>
+<p>This release is all about giving you more control, better performance, and an improved user experience. We’re always working to enhance the platform, and we appreciate your feedback!</p>]]></content:encoded>
+        </item>
+    </channel>
+</rss>
