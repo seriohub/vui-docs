@@ -47,9 +47,9 @@ The following override files are available in the [`examples/overrides`](https:/
 - `single-cluster.yaml`
 - `single-cluster-no-auth.yaml`
 - `single-cluster-ldap.yaml`
-- `core-cluster.yaml`
-- `core-cluster-ldap.yaml`
-- `agent-only.yaml`
+- `core.yaml`
+- `core-ldap.yaml`
+- `agent.yaml`
 
 Each file includes only the **essential configuration keys** needed for a working deployment in its respective scenario.
 
@@ -66,4 +66,4 @@ They simplify configuration, reduce the risk of misconfiguration, and speed up t
 | Core Cluster    | Centralized multi-cluster management                     |
 | Agent Only      | Secondary clusters that connect to a central VUI-Core    |
 
-> 🛠️ You can extend any override file by layering your own `values.yaml` to enable advanced features like LDAP, TLS, or custom ingress settings.
+> 🛠️ You can extend any override file by layering your own `values.yaml` to enable advanced features like security, LDAP, TLS, or custom ingress settings.

@@ -73,11 +73,11 @@ Create a file named `.dockerconfigjson` with the following content:
 
 Then create the secret:
 
-'''
+```shell
 kubectl create secret generic harbor-creds \
   --from-file=.dockerconfigjson=.dockerconfigjson \
   --type=kubernetes.io/dockerconfigjson
-'''
+```
 
 ---
 
@@ -109,7 +109,7 @@ kubectl create secret generic vui-nats-user-auth \
 ```
 
 > 🔄 The NATS service includes a sidecar that watches this secret and automatically reloads its configuration.  
-> You **do not need to restart any pods** when updating user credentials.
+> You **do not need to restart any pods** when updating cluster credentials.
 
 ## Requirements
 
@@ -119,7 +119,7 @@ kubectl create secret generic vui-nats-user-auth \
 ## Configuration
 
 Use the predefined override file:  
-[`core-cluster.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/core-cluster.yaml)
+[`core.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/core-cluster.yaml)
 
 Minimal required configuration:
 
@@ -159,8 +159,8 @@ natsService:
 :::tip Credentials
 Login to the UI with the credentials defined in:
 
-- `coreService.secret.defaultAdminUsername`
-- `coreService.secret.defaultAdminPassword`
+- **Username**: `coreService.secret.defaultAdminUsername`
+- **Password**: `coreService.secret.defaultAdminPassword`
 :::
 
 ## Installation
@@ -186,7 +186,7 @@ Use the Core dashboard to manage and monitor multiple remote clusters using Agen
 
 ## Additional Useful Override Files
 
-The [`vui-helm`](https://github.com/seriohub/vui-helm) repository includes other override files for alternative use cases:
+The [`vui-helm`](https://github.com/seriohub/vui-helm/tree/main/examples/overrides) repository includes other override files for alternative use cases:
 
 - [`core-ldap.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/core-ldap.yaml) — Enables LDAP authentication
 

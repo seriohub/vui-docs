@@ -65,8 +65,8 @@ https://vui.yourdomain.com
 :::tip Credentials
 Credentials:
 
-- **Username**: your configured `defaultAdminUsername`
-- **Password**: your configured `defaultAdminPassword`
+- **Username**: `apiService.config.defaultAdminUsername`
+- **Password**: `apiService.config.defaultAdminPassword`
 :::
 
 ## Additional Useful Override Files
