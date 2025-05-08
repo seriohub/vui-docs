@@ -1,0 +1,61 @@
+---
+sidebar_label: 'Agent Only'
+sidebar_position: 33
+---
+
+# Agent-Only Installation
+
+This scenario installs only the **agent components** (`vui-api` and `vui-watchdog`) in a **secondary cluster** that connects to a centralized VUI-Core instance.
+
+## Requirements
+
+- A deployed and reachable VUI-Core instance
+- NATS endpoint and credentials from the Core cluster
+- A working Velero installation in the local cluster
+
+## Configuration
+
+Use the predefined override file:  
+[`agent-only.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/agent-only.yaml)
+
+Minimal required configuration:
+
+```
+global:
+  veleroNamespace: <your-velero-namespace>
+  clusterName: <agent-cluster-name>
+  agentMode: true
+
+apiService:
+  secret:
+    defaultAdminUsername: <admin>
+    defaultAdminPassword: <password>
+    natsUsername: <nats-Agent-2-User>
+    natsPassword: <nats-Agent-2-Pwd>
+
+  nats:
+    enabled: true
+    protocol: nats
+    endpointUrl: <core-nats-ip-or-domain>
+```
+
+> 💡 The `endpointUrl` should match the IP or DNS of the NATS service running in the Core cluster.  
+> Use the same `natsUsername` and `natsPassword` configured in the Core setup.
+
+## Installation
+
+``` shell
+helm repo add seriohub https://seriohub.github.io/velero-helm
+helm repo update
+
+kubectl create ns vui
+
+helm install vui-agent seriohub/vui \
+  -n vui \
+  -f agent-only.yaml
+```
+
+## Access
+
+Once installed, this Agent cluster will automatically connect to the VUI-Core instance.  
+You will be able to manage and monitor backups and restores across all clusters from the centralized UI.

@@ -22,7 +22,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'seriohub', // Usually your GitHub org/user name.
-  projectName: 'velero-docs', // Usually your repo name.
+  projectName: 'vui-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -53,14 +53,14 @@ const config: Config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
-        //blog: {
-        //  showReadingTime: true,
-        //  // Please change this to your repo.
-        //  // Remove this to remove the "edit this page" links.
-        //  editUrl:
-        //    'https://github.com/seriohub/velero-docs/blob/main/',
-        //},
-        blog: false,
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/seriohub/velero-docs/blob/main/',
+        },
+        //blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -85,9 +85,9 @@ const config: Config = {
           label: 'Docs',
         },
         { to: '/releases/changelog/helm', label: 'What\'s New', position: 'left' },
-        //{ to: 'blog', label: 'Blog', position: 'left'},
+        { to: 'blog', label: 'Blog', position: 'left'},
         { to: '/community/contributors', label: 'Community', position: 'left' },
-        { to: '/sponsors/sponsors', label: 'Sponsors', position: 'left' },
+        { to: '/sponsors/', label: 'Sponsors', position: 'left' },
         { to: '/contacts/contacts', label: 'Contacts', position: 'left' },
         {
           href: 'https://github.com/orgs/seriohub/repositories',
@@ -189,6 +189,19 @@ const config: Config = {
       textColor: '#fff',
       isCloseable: false,
     },*/
+
+    announcementBar: {
+      id: 'chart-1.0.0-release',
+      content:`
+      <strong style="font-size: 1.01rem;">
+        📢 New Release: Chart 1.0.0 is here! Discover breaking changes, streamlined installation flows, and the first release of the powerful <code>core</code> module.
+        <a href="/blog/chart-1.0.0" style="text-decoration: underline;">Read the blog post</a> 🚀
+      </strong>
+      `,
+      backgroundColor: '#e6f0fa',
+      textColor: '#1871c1',
+      isCloseable: true,
+    },
 
   } satisfies Preset.ThemeConfig,
 

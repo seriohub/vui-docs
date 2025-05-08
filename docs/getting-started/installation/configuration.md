@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Helm values'
+sidebar_label: 'Configuration'
 sidebar_position: 5
 description: 'Helm values'
 ---
@@ -16,7 +16,11 @@ Below are some notes on specific configuration parameters.
 ## ORIGINS
 
 ```code
-Helm key: apiConfig.origins*
+Helm key: apiService.config.origins*
+```
+
+```code
+Helm key: coreService.config.origins*
 ```
 
 You can define up to **100 allowed origins** that should be permitted to make cross-origin requests.  

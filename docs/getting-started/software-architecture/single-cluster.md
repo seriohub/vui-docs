@@ -3,15 +3,18 @@ sidebar_label: 'Single cluster'
 sidebar_position: 10
 ---
 
-# Single cluster
+# Single Cluster
 
-In a single cluster installation, all components are deployed within that one cluster.
+In a single-cluster installation, all components are deployed within the same Kubernetes cluster.
 
-The software architecture of the VUI project is organized into the following layers:
+The VUI software architecture is organized into the following layers:
 
-- **Presentation Layer (VUI-UI)**: This layer manages the web interface that is displayed to users.
-- **Logical Layer (VUI-API and VUI-Watchdog)**: This layer processes all user requests made through the graphical interface, interacts with the Velero engine, and sends notifications when events occur.
+- **Presentation Layer `vui-ui`**  
+  Handles the web interface and user interactions.
 
-Each element of the project is developed as a indipendent service
+- **Logic Layer `vui-api` and `vui-watchdog`**  
+  Processes user actions from the UI, communicates with the Velero engine, and manages event-driven notifications.
 
-![software-architecture-sc](./../../assets/screenshots/20_sa_VUI.gif)
+Each component is developed as an independent microservice to ensure modularity and ease of maintenance.
+
+![VUI Software Architecture – Single Cluster](./../../assets/screenshots/20_sa_VUI.gif)

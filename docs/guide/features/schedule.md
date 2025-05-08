@@ -23,8 +23,14 @@ The Cron Schedule Heatmap helps in optimizing backup schedules by providing a cl
 
 ## Create schedule
 
-![create schedule](./../../assets/screenshots/07_create_schedule.png)
-
 The schedule creation form, with dropdown menus populated with relevant fields, simplifies data entry, allowing you to create new schedules quickly and intuitively.
 
 This user-friendly design streamlines the scheduling process, reducing the potential for errors and saving time. By guiding users through the necessary steps with pre-populated options, the form ensures that schedules are created accurately and efficiently, catering to both novice and experienced users.
+
+![create schedule](./../../assets/screenshots/07_create_schedule_1.png)
+
+![create schedule](./../../assets/screenshots/07_create_schedule_2.png)
+
+![create schedule](./../../assets/screenshots/07_create_schedule_3.png)
+
+![create schedule](./../../assets/screenshots/07_create_schedule_4.png)

@@ -5,10 +5,12 @@ sidebar_position: 1
 
 # Architecture
 
-The VUI project was developed with Cloud-native architecture in mind. From the outset, the goal was to create a project composed of multiple microservices that could be easily deployed on Kubernetes clusters, ensuring straightforward maintenance and facilitating future enhancements.
+The VUI project is built with a cloud-native architecture in mind. From the very beginning, the goal has been to design a modular system composed of multiple microservices, easily deployable on Kubernetes clusters. This approach ensures simplified maintenance, scalability, and flexibility for future enhancements.
 
-During the installation process, you have the option to select your preferred installation type.
+During installation, you can choose the type of deployment that best suits your environment:
 
-For those managing a single cluster, or if you prefer to deploy an isolated installation even when multiple clusters are available, the single cluster option is ideal.
+- **Single-Cluster Installation**:  
+  Ideal for managing a single cluster or when you prefer isolated deployments, even in multi-cluster environments.
 
-However, if you oversee multiple clusters and wish to centralize management through a unified dashboard, the multi-cluster installation is the recommended choice.
+- **Multi-Cluster Installation**:  
+  Recommended for users managing multiple clusters. This setup enables centralized control through a unified dashboard powered by VUI-Core.

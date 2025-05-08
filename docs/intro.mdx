@@ -1,0 +1,68 @@
+---
+sidebar_label: 'Introduction'
+sidebar_position: 1
+---
+
+# Introduction
+
+import CustomTip from '/src/components/openSourceTip';
+
+<CustomTip>
+If this project has helped simplify your workflow or saved you time, consider giving back!  
+You can contribute in many ways: report bugs, suggest new features, improve documentation, or make a donation. Every contribution matters.
+
+A heartfelt thank you to all our [sponsors](/sponsors/) for their generous support.
+
+[BECOME A SPONSOR](https://github.com/sponsors/davideserio)
+</CustomTip>
+
+:::important
+This is the initial version of the documentation for the VUI project.  
+Some content may be incomplete or missing. We welcome your feedback and suggestions to help us improve.
+:::
+
+:::warning
+**Attention:** VUI is under active development.  
+Some features or tools may be unfinished or unstable. We recommend testing thoroughly in non-production or sandbox environments before using VUI in critical systems.
+
+If you encounter any issues or have suggestions for improvements, please report them — your feedback is invaluable in improving the project.
+:::
+
+![core-dashboard](./assets/screenshots/18_core_dashboard.png)
+
+## Getting Started
+
+**VUI (Velero User Interface)** is a modular suite of tools designed to simplify Velero backup operations through an intuitive web interface. It includes the following core components:
+
+- [`vui-api`](https://github.com/seriohub/vui-api) – Agent module
+- [`vui-ui`](https://github.com/seriohub/vui-ui) – Web user interface
+- [`vui-watchdog`](https://github.com/seriohub/vui-watchdog) – Notification service
+- `vui-core` – Multi-cluster orchestration
+
+Additional modules are available for deployment and documentation:
+
+- [`velero-helm`](https://github.com/seriohub/vui-helm) – Helm chart for simplified installation
+- [`vui-docs`](https://github.com/seriohub/vui-docs) – Project documentation
+
+## Features
+
+- Intuitive user experience
+- Backup management
+- Restore management
+- Schedule management
+- Pod volume backup and restore management
+- Real-time backup/restore monitoring
+- Server status request monitoring
+- Download request tracking
+- Backup deletion request tracking
+- Storage class mapping
+- Restic support (lock checks, unlock, unlock --remove-all)
+- Multi-cluster monitoring (requires `vui-core`)
+- Notification support
+
+Learn more in the [Overview](/docs/getting-started/overview.md), which includes screenshots and feature descriptions.
+
+## Installation
+
+While YAML manifests are available for individual modules, we highly recommend using Helm for installation.  
+Helm simplifies the deployment process and reduces manual steps. Follow the [installation guide](getting-started/installation/helm) to get started.

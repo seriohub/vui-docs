@@ -3,21 +3,29 @@ sidebar_label: 'Multi cluster'
 sidebar_position: 20
 ---
 
-# Multi-cluster
+# Multi-Cluster
 
-For those who manage several Kubernetes clusters and wish to centralise the web interface (VUI-UI), the **VUI-Core**  component acts as a gateway.
-This component routes user requests exclusively to the active connection.
-
-:::warning
-The VUI-Core component is not yet released
-:::
-
-![software-architecture-mc](./../../assets/screenshots/21_sa_VUI_Core.gif)
+For users managing multiple Kubernetes clusters, the **`vui-core`** component serves as a central gateway that enables unified access and control.  
+Instead of deploying a separate web interface `vui-ui` in each cluster, `vui-core` allows you to connect all clusters to a single instance of the UI.
 
 :::info
-The **Presentation layer** and the **Gateway layer** must be deployed once, possibly in the same cluster. The **Logical layer** runs as an agent and can be deployed several times in a different clusters.
+In a typical multi-cluster setup:
+
+- In the **primary cluster** (where `vui-core` is deployed), the following components are installed:
+  - `vui-core`
+  - `nats`
+  - `vui-api`
+  - `vui-ui`
+  - `vui-watchdog`
+
+- In each **connected secondary cluster**, only the agent components are installed:
+  - `vui-api`
+  - `vui-watchdog`
+
 :::
 
+![VUI Software Architecture – Multi Cluster](./../../assets/screenshots/21_sa_VUI_Core.gif)
+
 :::tip
-The VUI-Core could be used also if you handle a single cluster
+Even if you're currently managing a single cluster, deploying `vui-core` can be useful to prepare for future multi-cluster expansion or centralized access needs.
 :::

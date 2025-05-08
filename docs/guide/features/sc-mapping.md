@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'SC mapping'
+sidebar_label: 'Storage Class mapping'
 sidebar_position: 90
 ---
 

@@ -9,15 +9,9 @@ If this open-source project has been helpful in your work, please consider [supp
 
 ## Sponsors
 
-Vui is proudly sponsored by the following organizations:
+Vui is proudly sponsored by the following organization:
 
 <figure style={{ marginLeft: '0px', marginBottom: '200px' }}> 
 [![Mercedes-Benz](https://avatars.githubusercontent.com/mercedes-benz?s=200)](https://github.com/mercedes-benz)
 <figcaption alt="Merced-Benz-Logo" style={{marginLeft:'30px'}}>Mercedes-Benz</figcaption>
 </figure>
-
-___
-
-## Backers
-
-- Daniel Reiter (Nov 2024)

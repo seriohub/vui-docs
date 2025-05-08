@@ -3,174 +3,160 @@ sidebar_label: 'Helm'
 sidebar_position: 3
 ---
 
-# HELM Install
+# Helm Installation
 
-While YAML files are available for individual projects to facilitate installation via kubectl, it is highly recommended to use Helm for installation. Helm automates many steps, streamlining the process.
+This page provides the general steps to install VUI using Helm, the recommended and supported method for deployment.  
+Helm simplifies installation, upgrade, and management of VUI components across different environments.
 
-Helm repository is available [here](https://github.com/seriohub/velero-helm)
+While this guide covers the core installation process, we highly recommend reviewing the  
+[Installation Scenarios](/docs/getting-started/installation/scenarios/overview) page first.  
+It offers a set of predefined configurations (override files) tailored to common use cases such as:
+
+- Single-cluster deployment
+- Centralized multi-cluster setup
+- Agent-only installation
+
+Using one of these scenarios helps you start with the right structure and minimizes configuration errors.
+
+The official Helm chart is available here:  
+👉 [https://github.com/seriohub/vui-helm](https://github.com/seriohub/vui-helm)
 
 :::important
-The application consists of a UI that needs to communicate with the API service. Therefore, the API must have endpoints accessible from the client's browser. For this purpose, the Helm chart is configured to support installation via ingress or node port to expose both the UI and the API.
-If both NodePort and Ingress are disabled, the application will be unreachable.
-If NodePort or Ingress don't meet your requirements, feel free to modify the configuration as needed.
+VUI consists of a UI that communicates directly with the API service.  
+Therefore, the API must be reachable from the client’s browser. The Helm chart supports both **Ingress** and **NodePort** exposure modes to make this possible.
+
+> If neither is configured, the application will be unreachable.
 :::
 
-## Install Vui with repo
+## Installing VUI via Helm Repository
 
 Follow these steps:
 
-1. Add repo:
+### 1. Add the repository
 
-    ``` bash
-    helm repo add seriohub-velero https://seriohub.github.io/velero-helm/
-    ```
+``` shell
+helm repo add seriohub https://seriohub.github.io/velero-helm/
+helm repo update
+```
 
-2. Check repo:
+### 2. Verify the chart is available
 
-    ``` bash
-    helm search repo seriohub-velero
-    ```
+``` shell
+helm search repo seriohub
+```
 
-    Check that the output looks like:
+Expected output:
 
-    ``` bash
-    NAME                CHART VERSION   APP VERSION DESCRIPTION                                       
-    seriohub-velero/vui 0.1.6           0.1.6       Velero User Interface: a friendly UI and dashbo..
-    ```
+``` shell
+NAME              CHART VERSION   APP VERSION   DESCRIPTION
+seriohub/vui      0.1.6           0.1.6         Velero User Interface: a friendly UI and dashboard...
+```
 
-3. Create a configuration file starting from [values-override.yaml](https://github.com/seriohub/velero-helm/blob/main/values-override.yaml) file.
+### 3. Choose an override file
 
-    For a simplified installation, you can refer to the values-override.yaml file, which defines the essential parameters for proper installation.
+Start from one of the [predefined override files](https://github.com/seriohub/vui-helm/tree/main/examples/overrides).  
+Each file is tailored for a specific [installation scenario](/docs/getting-started/installation/scenarios/overview#list-of-available-override-files).
 
-    :::tip
-    If you need advanced configurations, you can configure the [values.yaml](https://github.com/seriohub/velero-helm/blob/main/chart/values.yaml)
+> For a basic setup, you can use a file like `single-cluster.yaml` as a starting point.
 
-    The description of the parameters is available in the chart [readme](https://github.com/seriohub/velero-helm/tree/main/chart):
-    :::
+:::tip
+For advanced customization, refer to the full [values.yaml](https://github.com/seriohub/vui-helm/blob/main/chart/values.yaml) and the chart [README](https://github.com/seriohub/vui-helm/tree/main/chart).
+:::
 
-4. Create namespace:
-  
-    ``` bash
-    kubectl create ns velero-ui
-    ```
+### 4. Create the namespace
 
-5. Install using Helm:
+``` shell
+kubectl create namespace vui
+```
 
-    For a simplified installation, you can refer to the values-override.yaml file, which defines the essential parameters for proper installation.
+(Optional) To make it your default namespace:
 
-    :::tip
-    Make sure to customize the values in the [values-override.yaml](https://github.com/seriohub/velero-helm/blob/main/values-override.yaml) file according to your requirements before running the installation command.
-    :::
+``` shell
+kubectl config set-context --current --namespace=vui
+```
 
-    :::note
-    If you want to use a release candidate version of the components, add these lines in the values-override.yaml
-        ```
-        # api
-        api:
-          apiServer:
-            image:
-              tag: dev
-            imagePullPolicy: Always
-        # ui
-        ui:
-          webServer:
-            image:
-              tag: dev
-            imagePullPolicy: Always
-        # watchdog daemon
-        watchdog:
-          veleroMonitoring:
-            image:
-              tag: dev
-            imagePullPolicy: Always
-        # watchdog report
-        report:
-          veleroWatchdogReport:
-            image:
-              tag: dev
-            imagePullPolicy: Always
-        ```
-    The images contain the latest updates or improvements that will be released after a testing phase
-    :::
+### 5. Install the chart
 
+:::tip
+Make sure to edit your override file before running the install command.
+:::
 
-    ``` bash
-    helm install -f values-override.yaml vui seriohub-velero/vui -n velero-ui
-    ```
+``` shell
+helm install vui seriohub/vui \
+  -n vui \
+  -f values-override.yaml
+```
 
-    :::tip[Credentials]
-    Default user:
+:::tip Credentials
+Default login:
 
-    - Username: **admin**
+- **Username**: `admin`
+- **Password**: `admin`
+:::
 
-    - Password: **admin**
-    :::
+### 6. Upgrade (after config changes)
 
-6. Upgrade (In the case of changes or updates):
+``` shell
+helm upgrade vui seriohub/vui \
+  -n vui \
+  -f values-override.yaml
+```
 
-    ``` bash
-    helm upgrade -f values-override.yaml vui seriohub-velero/vui -n velero-ui
-    ```
+### 7. Uninstall
 
-7. Uninstall
+``` shell
+helm uninstall vui -n vui
+helm repo remove seriohub
+kubectl delete namespace vui
+```
 
-    ``` bash
-    helm uninstall vui -n velero-ui
-    helm repo remove seriohub-velero
-    kubectl delete ns velero-ui
-    ```
+---
 
-## Install Vui with clone repository
+## Installing VUI from Cloned Repository
 
-Follow these steps:
+You can also install the chart from source if you prefer local control or want to modify the chart.
 
-1. Clone the repository:
+### 1. Clone the repository
 
-    ``` bash
-    git clone https://github.com/seriohub/velero-helm.git
-    ```
+``` shell
+git clone https://github.com/seriohub/vui-helm.git
+cd vui-helm
+```
 
-2. Navigate to the Helm folder:
+### 2. Choose and edit a configuration file
 
-    ``` bash
-    cd velero-helm
-    ```
+Start from one of the override files in `examples/overrides/`, or use  
+[`values-override.yaml`](https://github.com/seriohub/vui-helm/blob/main/values-override.yaml) as a simplified base.
 
-3. Edit a configuration file starting from [values-override.yaml](https://github.com/seriohub/velero-helm/blob/main/values-override.yaml) file.
+:::tip
+For detailed parameter descriptions, see the full [values.yaml](https://github.com/seriohub/vui-helm/blob/main/chart/values.yaml) and the [README](https://github.com/seriohub/vui-helm/tree/main/chart).
+:::
 
-    For a simplified installation, you can refer to the values-override.yaml file, which defines the essential parameters for proper installation.
+### 3. Create the namespace
 
-    :::tip
-    If you need advanced configurations, you can configure the [values.yaml](https://github.com/seriohub/velero-helm/blob/main/chart/values.yaml)
+``` shell
+kubectl create namespace vui
+```
 
-    The description of the parameters is available in the chart [readme](https://github.com/seriohub/velero-helm/tree/main/chart):
-    :::
+### 4. Install the chart locally
 
-4. Create the namespace
+``` shell
+helm install vui ./chart \
+  -n vui \
+  -f values-override.yaml
+```
 
-    ``` bash
-    kubectl create ns velero-ui
-    ```
+### 5. Upgrade
 
-5. Install using Helm:
+``` shell
+helm upgrade vui ./chart \
+  -n vui \
+  -f values-override.yaml
+```
 
-    :::important
-    Make sure to customize the values in the [values-override.yaml](https://github.com/seriohub/velero-helm/blob/main/values-override.yaml) file according to your requirements before running the installation command.
-    :::
+### 6. Uninstall
 
-    ``` bash
-    helm install -f values-override.yaml vui ./chart/ -n velero-ui
-    ```
-
-6. Upgrade (In the case of changes or updates):
-
-    ``` bash
-    helm upgrade -f values-override.yaml vui ./chart/ -n velero-ui
-    ```
-
-7. Uninstall
-
-    ``` bash
-    helm uninstall vui -n velero-ui
-    kubectl delete ns velero-ui
-    ```
+``` shell
+helm uninstall vui -n vui
+kubectl delete namespace vui
+```

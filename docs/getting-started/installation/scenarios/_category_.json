@@ -1,0 +1,8 @@
+{
+  "label": "Scenarios",
+  "position": 40,
+  "link": {
+    "type": "generated-index",
+    "description": "Single cluster o multi-cluster deployment?"
+  }
+}

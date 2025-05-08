@@ -11,18 +11,20 @@ Backup Management is the main screen for managing backups. You can create new ba
 
 This centralized management screen simplifies the process of backup administration by offering all necessary tools in one place. The intuitive table layout ensures that critical information is easily accessible, reducing the time needed to monitor and manage backup operations. This setup is particularly beneficial for identifying and addressing issues promptly, ensuring the integrity and reliability of your data backups.
 
-## Backup logs
+## Backup Details
 
-![backup logs](./../../assets/screenshots/13_backup_logs.png)
-
-## Backup describe
-
-![backup describe](./../../assets/screenshots/12_backup_describe.png)
+![backup logs](./../../assets/screenshots/19_backup_details.png)
 
 ## Create backups
-
-![new backups](./../../assets/screenshots/04_create_backup.png)
 
 The backup creation form, with dropdown menus populated with relevant fields, simplifies data entry, allowing you to create new backups quickly and intuitively.
 
 This streamlined process reduces the likelihood of errors during backup configuration by guiding users through the necessary steps with pre-populated options. The intuitive design of the form ensures that even less experienced users can confidently create backups, while advanced users can efficiently manage complex backup scenarios with minimal effort.
+
+![new backups](./../../assets/screenshots/04_create_backup_1.png)
+
+![new backups](./../../assets/screenshots/04_create_backup_2.png)
+
+![new backups](./../../assets/screenshots/04_create_backup_3.png)
+
+![new backups](./../../assets/screenshots/04_create_backup_4.png)

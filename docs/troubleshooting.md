@@ -8,7 +8,7 @@ sidebar_position: 30
 ## Unable to login
 
 1. As mentioned during the installation, the application consists of a UI that needs to communicate with the API service. Therefore, the API must have endpoints accessible from the client's browser.
-   
+
    If there are issues with logging in, please ensure that the API is reachable from the browser at the following address: https://\<your-endpoint\>/api/docs
 
    If the API page is accessible, check if you can authenticate using Swagger.
@@ -21,6 +21,6 @@ sidebar_position: 30
 
 3. In some cases, the securityTokenKey is not automatically generated. As a result, when trying to log in, authentication fails, and the user is redirected to the login page.
 To resolve this issue, manually set the optional parameter **SECURITY_TOKEN_KEY** in the VUI-API configuration.
-   1. [See note 3](./getting-started/configuration/velero-api#configuration)
+   1. [See note 2](./getting-started/installation/configuration#configuration)
 
    2. [See values-override.yaml](https://github.com/seriohub/velero-helm/blob/688dba38e3573707c75898a0ba32a9c07e923117/values-override.yaml#L14)
