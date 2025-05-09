@@ -21,6 +21,6 @@ sidebar_position: 30
 
 3. In some cases, the securityTokenKey is not automatically generated. As a result, when trying to log in, authentication fails, and the user is redirected to the login page.
 To resolve this issue, manually set the optional parameter **SECURITY_TOKEN_KEY** in the VUI-API configuration.
-   1. [See note 2](./getting-started/installation/configuration#configuration)
+   1. [See note 2](./getting-started/installation/configuration)
 
    2. [See values-override.yaml](https://github.com/seriohub/velero-helm/blob/688dba38e3573707c75898a0ba32a9c07e923117/values-override.yaml#L14)
