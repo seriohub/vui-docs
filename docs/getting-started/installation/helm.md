@@ -119,14 +119,13 @@ You can also install the chart from source if you prefer local control or want t
 ### 1. Clone the repository
 
 ``` shell
-git clone https://github.com/seriohub/vui-helm.git
-cd vui-helm
+git clone https://github.com/seriohub/velero-helm.git
+cd velero-helm
 ```
 
 ### 2. Choose and edit a configuration file
 
-Start from one of the override files in `examples/overrides/`, or use  
-[`values-override.yaml`](https://github.com/seriohub/vui-helm/blob/main/values-override.yaml) as a simplified base.
+Start from one of the override files in [`examples/overrides/`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides) as a simplified base.
 
 :::tip
 For detailed parameter descriptions, see the full [values.yaml](https://github.com/seriohub/vui-helm/blob/main/chart/values.yaml) and the [README](https://github.com/seriohub/vui-helm/tree/main/chart).
