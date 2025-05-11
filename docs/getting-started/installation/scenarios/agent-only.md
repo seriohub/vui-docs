@@ -16,7 +16,7 @@ This scenario installs only the **agent components** (`vui-api` and `vui-watchdo
 ## Configuration
 
 Use the predefined override file:  
-[`agent.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/agent.yaml)
+[`agent.yaml`](https://github.com/seriohub/velero-helm/blob/main/examples/overrides/agent.yaml)
 
 Minimal required configuration:
 

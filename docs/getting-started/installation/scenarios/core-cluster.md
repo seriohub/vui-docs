@@ -119,7 +119,7 @@ kubectl create secret generic vui-nats-user-auth \
 ## Configuration
 
 Use the predefined override file:  
-[`core.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/core-cluster.yaml)
+[`core.yaml`](https://github.com/seriohub/velero-helm/blob/main/examples/overrides/core-cluster.yaml)
 
 Minimal required configuration:
 
@@ -186,9 +186,9 @@ Use the Core dashboard to manage and monitor multiple remote clusters using Agen
 
 ## Additional Useful Override Files
 
-The [`vui-helm`](https://github.com/seriohub/vui-helm/tree/main/examples/overrides) repository includes other override files for alternative use cases:
+The [`velero-helm`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides) repository includes other override files for alternative use cases:
 
-- [`core-ldap.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/core-ldap.yaml) — Enables LDAP authentication
+- [`core-ldap.yaml`](https://github.com/seriohub/velero-helm/blob/main/examples/overrides/core-ldap.yaml) — Enables LDAP authentication
 
 ## Notes
 

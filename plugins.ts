@@ -2,6 +2,7 @@ import { pluginsChangelog } from "./pluginsChangelog";
 
 export const plugins = [
     'docusaurus-plugin-matomo',
+    'docusaurus-plugin-image-zoom',
     [
         '@docusaurus/plugin-content-docs',
         {
@@ -17,6 +18,16 @@ export const plugins = [
             id: 'sponsors',
             path: 'sponsors',
             routeBasePath: 'sponsors', // The base URL path for this folder
+            // sidebarPath: require.resolve('./sidebars.js'), // Path to the sidebar configuration
+            sidebarPath: false
+        },
+    ],
+    [
+        '@docusaurus/plugin-content-docs',
+        {
+            id: 'enterprise',
+            path: 'enterprise',
+            routeBasePath: 'enterprise', // The base URL path for this folder
             // sidebarPath: require.resolve('./sidebars.js'), // Path to the sidebar configuration
             sidebarPath: false
         },

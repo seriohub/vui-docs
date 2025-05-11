@@ -19,7 +19,7 @@ It offers a set of predefined configurations (override files) tailored to common
 Using one of these scenarios helps you start with the right structure and minimizes configuration errors.
 
 The official Helm chart is available here:  
-👉 [https://github.com/seriohub/vui-helm](https://github.com/seriohub/vui-helm)
+👉 [https://github.com/seriohub/velero-helm](https://github.com/seriohub/velero-helm)
 
 :::important
 VUI consists of a UI that communicates directly with the API service.  
@@ -54,13 +54,13 @@ seriohub/vui      0.1.6           0.1.6         Velero User Interface: a friendl
 
 ### 3. Choose an override file
 
-Start from one of the [predefined override files](https://github.com/seriohub/vui-helm/tree/main/examples/overrides).  
+Start from one of the [predefined override files](https://github.com/seriohub/velero-helm/tree/main/examples/overrides).  
 Each file is tailored for a specific [installation scenario](/docs/getting-started/installation/scenarios/overview#list-of-available-override-files).
 
 > For a basic setup, you can use a file like `single-cluster.yaml` as a starting point.
 
 :::tip
-For advanced customization, refer to the full [values.yaml](https://github.com/seriohub/vui-helm/blob/main/chart/values.yaml) and the chart [README](https://github.com/seriohub/vui-helm/tree/main/chart).
+For advanced customization, refer to the full [values.yaml](https://github.com/seriohub/velero-helm/blob/main/chart/values.yaml) and the chart [README](https://github.com/seriohub/velero-helm/tree/main/chart).
 :::
 
 ### 4. Create the namespace
@@ -128,7 +128,7 @@ cd velero-helm
 Start from one of the override files in [`examples/overrides/`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides) as a simplified base.
 
 :::tip
-For detailed parameter descriptions, see the full [values.yaml](https://github.com/seriohub/vui-helm/blob/main/chart/values.yaml) and the [README](https://github.com/seriohub/vui-helm/tree/main/chart).
+For detailed parameter descriptions, see the full [values.yaml](https://github.com/seriohub/velero-helm/blob/main/chart/values.yaml) and the [README](https://github.com/seriohub/velero-helm/tree/main/chart).
 :::
 
 ### 3. Create the namespace

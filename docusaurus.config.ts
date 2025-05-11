@@ -71,6 +71,16 @@ const config: Config = {
   themeConfig: {
     // Replace with your project's social card
     image: 'img/vui-social-card.png',
+    zoom: {
+      selector: '.markdown img',
+      background: {
+        light: 'rgb(255, 255, 255)',
+        dark: 'rgb(50, 50, 50)'
+      },
+      config: {
+        // Opzioni aggiuntive di medium-zoom
+      }
+    },
     navbar: {
       title: 'VUI',
       logo: {
@@ -84,11 +94,12 @@ const config: Config = {
           position: 'left',
           label: 'Docs',
         },
-        { to: '/releases/changelog/helm', label: 'What\'s New', position: 'left' },
         { to: 'blog', label: 'Blog', position: 'left'},
+        { to: '/releases/changelog/helm', label: 'What\'s New', position: 'left' },        
         { to: '/community/contributors', label: 'Community', position: 'left' },
         { to: '/sponsors/', label: 'Sponsors', position: 'left' },
-        { to: '/contacts/contacts', label: 'Contacts', position: 'left' },
+        { to: '/enterprise/', label: 'Enterprise', position: 'left' },
+        { to: '/contacts/', label: 'Contacts', position: 'left' },
         {
           href: 'https://github.com/orgs/seriohub/repositories',
           label: 'GitHub',

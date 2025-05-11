@@ -11,7 +11,7 @@ This section outlines the most common **installation scenarios**, each supported
 Installing VUI via Helm typically requires a `values.yaml` file with many configuration keys.  
 While this provides flexibility, it can feel overwhelming at first — especially for new users.
 
-To simplify setup, the [`vui-helm`](https://github.com/seriohub/vui-helm) repository includes a collection of **minimal override files** tailored to common deployment patterns.
+To simplify setup, the [`velero-helm`](https://github.com/seriohub/velero-helm) repository includes a collection of **minimal override files** tailored to common deployment patterns.
 
 These can be used as a starting point and adapted to fit your specific requirements.
 
@@ -42,7 +42,7 @@ Installs only the agent components (`vui-api`, `vui-watchdog`) in clusters that 
 
 ## List of Available Override Files
 
-The following override files are available in the [`examples/overrides`](https://github.com/seriohub/vui-helm/tree/main/examples/overrides) directory:
+The following override files are available in the [`examples/overrides`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides) directory:
 
 - `single-cluster.yaml`
 - `single-cluster-no-auth.yaml`

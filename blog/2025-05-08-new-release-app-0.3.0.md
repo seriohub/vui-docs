@@ -10,7 +10,7 @@ hide_table_of_contents: false
 
 🚀 **A Major Milestone for Deployment**
 
-We’re excited to announce the release of Chart 1.0.0, a significant step forward for deployment flexibility, clarity, and component modularity. This release introduces structural changes, new installation options, and support for advanced components.
+We’re excited to announce the release of Vui 0.3.0 alongside Helm Chart 1.0.0, a significant step forward for deployment flexibility, clarity, and component modularity. This release introduces structural changes, new installation options, and support for advanced components.
 
 <!-- truncate -->
 
@@ -18,7 +18,7 @@ We’re excited to announce the release of Chart 1.0.0, a significant step forwa
 
 With this version, the Helm chart structure has been completely refactored. Deprecated fields have been removed, new required values introduced, and the entire layout optimized for clarity and maintainability.
 
-⚠️ This version is not backward-compatible with previous releases (e.g. 0.1.27). Please refer to the updated templates for [scenario-based](/docs/getting-started/installation/scenarios/overview) installations.
+⚠️ This version is not backward-compatible with previous releases (Helm chart 0.1.27 and previous versions). Please refer to the updated templates for [scenario-based](/docs/getting-started/installation/scenarios/overview) installations.
 
 🆕 **Core Support**
 

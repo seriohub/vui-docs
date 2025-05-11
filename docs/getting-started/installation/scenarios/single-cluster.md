@@ -16,7 +16,7 @@ Authentication is handled using built-in credentials.
 ## Configuration
 
 Use the predefined override file:  
-[`single-cluster.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/single-cluster.yaml)
+[`single-cluster.yaml`](https://github.com/seriohub/velero-helm/blob/main/examples/overrides/single-cluster.yaml)
 
 Minimal required configuration:
 
@@ -71,7 +71,7 @@ Credentials:
 
 ## Additional Useful Override Files
 
-In addition to the basic configuration for the single-cluster scenario, the [`vui-helm`](https://github.com/seriohub/vui-helm) repository provides other override files for specific needs:
+In addition to the basic configuration for the single-cluster scenario, the [`velero-helm`](https://github.com/seriohub/velero-helm) repository provides other override files for specific needs:
 
-- [`single-cluster-no-auth.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/single-cluster-no-auth.yaml) — Disables authentication, useful for testing or isolated environments
-- [`single-cluster-ldap.yaml`](https://github.com/seriohub/vui-helm/blob/main/examples/overrides/single-cluster-ldap.yaml) — Enables LDAP authentication for integration with enterprise identity providers
+- [`single-cluster-no-auth.yaml`](https://github.com/seriohub/velero-helm/blob/main/examples/overrides/single-cluster-no-auth.yaml) — Disables authentication, useful for testing or isolated environments
+- [`single-cluster-ldap.yaml`](https://github.com/seriohub/velero-helm/blob/main/examples/overrides/single-cluster-ldap.yaml) — Enables LDAP authentication for integration with enterprise identity providers
