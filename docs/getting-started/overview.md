@@ -39,3 +39,10 @@ VUI has been developed, tested, and deployed in multi-cluster environments with 
 
 - **Kubernetes** ≥ v1.28.x  
 - **Velero Server** ≥ v1.11.1
+
+## Installation
+
+We strongly recommend using **Helm** to install VUI, as it simplifies deployment and minimizes manual configuration.  
+You can follow the [Helm installation guide](/docs/getting-started/installation/helm) for step-by-step instructions.
+
+For faster setup, we also provide [predefined scenario templates](/docs/getting-started/installation/scenarios/overview) with minimal override files tailored to common use cases.

@@ -44,12 +44,12 @@ Installs only the agent components (`vui-api`, `vui-watchdog`) in clusters that 
 
 The following override files are available in the [`examples/overrides`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides) directory:
 
-- `single-cluster.yaml`
-- `single-cluster-no-auth.yaml`
-- `single-cluster-ldap.yaml`
-- `core.yaml`
-- `core-ldap.yaml`
-- `agent.yaml`
+- [`single-cluster.yaml`](https://github.com/seriohub/velero-helm/blob/main/examples/overrides/single-cluster.yaml)
+- [`single-cluster-no-auth.yaml`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides/single-cluster-no-auth.yaml)
+- [`single-cluster-ldap.yaml`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides/single-cluster-ldap.yaml)
+- [`core.yaml`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides/core.yaml)
+- [`core-ldap.yaml`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides/core-ldap.yaml)
+- [`agent.yaml`](https://github.com/seriohub/velero-helm/tree/main/examples/overrides/agent.yaml)
 
 Each file includes only the **essential configuration keys** needed for a working deployment in its respective scenario.
 
