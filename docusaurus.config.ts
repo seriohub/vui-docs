@@ -121,6 +121,10 @@ const config: Config = {
               label: 'Installation',
               to: '/docs/getting-started/installation/helm',
             },
+            {
+              label: 'Installation Scenarios  ',
+              to: 'docs/getting-started/installation/scenarios/overview',
+            },
           ],
         },
         /*{
@@ -171,10 +175,31 @@ const config: Config = {
           ],
         },
         {
-          title: 'Contact',
+          title: 'More',
           items: [
             {
-              label: 'info@seriohub.com',
+              label: 'Blog',
+               href: '/blog',
+            },
+            {
+              label: 'Core',
+               href: '/docs/guide/features/core',
+            },
+            {
+              label: 'Changelog',
+               href: '/releases/changelog/helm',
+            },
+          ],
+        },
+        {
+          title: 'Support',
+          items: [
+            {
+              label: 'Open Issue',
+              href: 'https://github.com/seriohub/vui-ui/issues',
+            },
+            {
+              label: 'Contact Us',
               href: 'mailto:info@seriohub.com',
             },
           ],
