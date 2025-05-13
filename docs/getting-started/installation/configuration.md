@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Configuration'
-sidebar_position: 5
+sidebar_position: 30
 description: 'Helm values'
 ---
 
@@ -9,7 +9,7 @@ description: 'Helm values'
 The installation can be customized and configured using Helm values.  
 The complete list of available configuration keys and their descriptions is available in the official Helm repository at the following URL:  
 
-[Velero Helm Chart Configuration](https://github.com/seriohub/velero-helm/tree/bfe372a1e02072434edab89e9f1f79b630d739b7/chart)
+[Velero Helm Chart Configuration](https://github.com/seriohub/velero-helm/blob/main/chart/README.md)
 
 Below are some notes on specific configuration parameters.
 

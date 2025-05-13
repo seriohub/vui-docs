@@ -1,6 +1,6 @@
 ---
 sidebar_label: 'Docker Compose'
-sidebar_position: 50
+sidebar_position: 20
 ---
 
 # Docker Compose Installation

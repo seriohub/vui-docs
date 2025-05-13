@@ -1,6 +1,6 @@
 ---
 title: Vui 0.3.0
-slug: chart-1.0.0
+slug: vui-0.3.0
 description: A major chart release introducing structural improvements, support for core components, and breaking changes.
 authors:
   - DSerio

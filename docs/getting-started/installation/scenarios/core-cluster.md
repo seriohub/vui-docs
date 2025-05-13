@@ -213,3 +213,8 @@ helm upgrade vui ./chart/ -f core.yaml --set natsService.loadBalancerIP=<resolve
 kubectl rollout restart deployment -l component=api -n vui
 kubectl rollout restart deployment -l component=core -n vui
 ```
+
+## Evaluating `vui-core`
+
+We understand that some organizations may need more information about `vui-core` capabilities before sponsoring.  
+If your team is considering supporting VUI and would like to explore `vui-core`, feel free to [get in touch](mailto:info@seriohub.com).
