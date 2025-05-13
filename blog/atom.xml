@@ -9,8 +9,8 @@
     <icon>https://vui.seriohub.com/img/favicon.svg</icon>
     <entry>
         <title type="html"><![CDATA[Vui 0.3.0]]></title>
-        <id>https://vui.seriohub.com/blog/chart-1.0.0</id>
-        <link href="https://vui.seriohub.com/blog/chart-1.0.0"/>
+        <id>https://vui.seriohub.com/blog/vui-0.3.0</id>
+        <link href="https://vui.seriohub.com/blog/vui-0.3.0"/>
         <updated>2025-05-08T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[A major chart release introducing structural improvements, support for core components, and breaking changes.]]></summary>
         <content type="html"><![CDATA[<p>🚀 <strong>A Major Milestone for Deployment</strong></p>
