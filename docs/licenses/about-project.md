@@ -26,6 +26,8 @@ This component will offer advanced features, including:
 
 The Core will be available **exclusively to project sponsors**.
 
+---
+
 ## Why this change?
 
 The goal is to create a win-win situation:
@@ -44,6 +46,8 @@ If you would like to support VUI and gain access to the Pro module, you can beco
 
 Thank you for making this possible.  
 Your trust and support are what make this journey sustainable.
+
+---
 
 ## Why Sponsoring Matters
 

@@ -6,15 +6,44 @@ keywords: [VUI, sponsors, open source support, GitHub sponsors, Velero UI, contr
 sidebar: false
 ---
 
-# Many thanks to all our sponsors!
+# 🙏 Many thanks to all our sponsors!
 
-If this open-source project has been helpful in your work, please consider [supporting us](https://github.com/sponsors/davideserio) .
+If this open-source project has been helpful in your work, please consider [supporting us on GitHub Sponsors](https://github.com/sponsors/davideserio).
 
-## Sponsors
+Your support helps us keep VUI open, maintained, and growing for the entire community.
 
-Vui is proudly sponsored by the following organization:
+---
 
-<figure style={{ marginLeft: '0px', marginBottom: '200px' }}> 
-[![Mercedes-Benz](https://avatars.githubusercontent.com/mercedes-benz?s=200)](https://github.com/mercedes-benz)
-<figcaption alt="Merced-Benz-Logo" style={{marginLeft:'30px'}}>Mercedes-Benz</figcaption>
+## 💡 Why Sponsoring Matters
+
+Maintaining a production-grade open source project takes **time, effort, and long-term commitment** — not just to write code, but also to fix bugs, write documentation, support users, and plan new features.
+
+By sponsoring VUI, you're not buying access to software — you're **investing in a tool you rely on**, and helping ensure it continues to improve, stay secure, and remain independent.
+
+Sponsorships allow us to:
+
+- Dedicate focused time to the project
+- Improve and document advanced features (like `vui-core`)
+- Respond to real-world needs from the community
+- Keep the main components free and open for everyone
+
+Even small contributions make a big difference.
+
+---
+
+## 🏆 Sponsors
+
+VUI is proudly supported by the following organization:
+
+<figure style={{ marginLeft: '0px' }}>
+  [![Mercedes-Benz](https://avatars.githubusercontent.com/mercedes-benz?s=200)](https://github.com/mercedes-benz)
+  <figcaption alt="Merced-Benz-Logo" style={{marginLeft:'30px'}}>Mercedes-Benz</figcaption>
 </figure>
+
+---
+
+## ❤️ Become a Sponsor
+
+If you or your organization use VUI, becoming a sponsor is the most direct way to help it thrive.
+
+👉 [View sponsorship tiers »](https://github.com/sponsors/davideserio)
