@@ -36,8 +36,14 @@ Even small contributions make a big difference.
 VUI is proudly supported by the following organization:
 
 <figure style={{ marginLeft: '0px' }}>
-  [![Mercedes-Benz](https://avatars.githubusercontent.com/mercedes-benz?s=200)](https://github.com/mercedes-benz)
-  <figcaption alt="Merced-Benz-Logo" style={{marginLeft:'30px'}}>Mercedes-Benz</figcaption>
+  <a href="https://github.com/mercedes-benz" target="_blank" rel="noopener noreferrer">
+    <img
+      src="https://avatars.githubusercontent.com/mercedes-benz?s=200"
+      alt="Mercedes-Benz"
+      className="no-zoom"
+    />
+  </a>
+  <figcaption style={{ marginLeft: '30px' }}>Mercedes-Benz</figcaption>
 </figure>
 
 ---

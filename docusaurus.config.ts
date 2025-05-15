@@ -72,7 +72,7 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/vui-social-card.png',
     zoom: {
-      selector: '.markdown img',
+      selector: '.markdown img:not(.no-zoom)',
       background: {
         light: 'rgb(255, 255, 255)',
         dark: 'rgb(50, 50, 50)'
