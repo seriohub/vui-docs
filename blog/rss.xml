@@ -18,9 +18,9 @@
 <p>We’re excited to announce the release of Vui 0.3.0 alongside Helm Chart 1.0.0, a significant step forward for deployment flexibility, clarity, and component modularity. This release introduces structural changes, new installation options, and support for advanced components.</p>
 <p>🚨 <strong>Breaking Changes</strong></p>
 <p>With this version, the Helm chart structure has been completely refactored. Deprecated fields have been removed, new required values introduced, and the entire layout optimized for clarity and maintainability.</p>
-<p>⚠️ This version is not backward-compatible with previous releases (Helm chart 0.1.27 and previous versions). Please refer to the updated templates for <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/overview">scenario-based</a> installations.</p>
+<p>⚠️ This version is not backward-compatible with previous releases (Helm chart 0.1.27 and previous versions). Please refer to the updated templates for <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/installation-scenarios">scenario-based</a> installations.</p>
 <p>🆕 <strong>Core Support</strong></p>
-<p>This release introduces support for the new <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/core-cluster">core</a> component—a powerful foundation designed to extend the platform’s capabilities. While still in early stages, it represents a fundamental building block for advanced functionality.</p>
+<p>This release introduces support for the new <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/core-cluster-installation">core</a> component—a powerful foundation designed to extend the platform’s capabilities. While still in early stages, it represents a fundamental building block for advanced functionality.</p>
 <p>Organizations with access to this component can now deploy it directly via Helm. This marks an important step in our effort to offer modular extensibility to those contributing most actively to the project’s growth.</p>
 <p>🛠 <strong>Improvements &amp; Installation Scenarios</strong></p>
 <p>We’ve added dedicated templates for different usage contexts:</p>
