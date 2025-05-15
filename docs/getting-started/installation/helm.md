@@ -12,8 +12,9 @@ sidebar_position: 1
 This page provides the general steps to install VUI using Helm, the recommended and supported method for deployment.  
 Helm simplifies installation, upgrade, and management of VUI components across different environments.
 
+:::tip
 While this guide covers the core installation process, we highly recommend reviewing the  
-[Installation Scenarios](/docs/getting-started/installation/scenarios/installation-scenarios) page first.  
+👉 [Installation Scenarios](/docs/getting-started/installation/scenarios/installation-scenarios) before install.
 It offers a set of predefined configurations (override files) tailored to common use cases such as:
 
 - Single-cluster deployment
@@ -21,9 +22,9 @@ It offers a set of predefined configurations (override files) tailored to common
 - Agent-only installation
 
 Using one of these scenarios helps you start with the right structure and minimizes configuration errors.
+:::
 
-The official Helm chart is available here:  
-👉 [https://github.com/seriohub/velero-helm](https://github.com/seriohub/velero-helm)
+The official Helm chart is available [here](https://github.com/seriohub/velero-helm).
 
 :::important
 VUI consists of a UI that communicates directly with the API service.  
