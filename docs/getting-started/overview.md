@@ -1,4 +1,8 @@
 ---
+id: overview
+title: VUI Overview – Web Interface for Managing Velero Backups
+description: Explore the key features of VUI, a user-friendly web interface for Velero. Manage backups, restores, schedules, clusters, notifications, and monitor operations in real time.
+keywords: [VUI, Velero, backup management, restore management, Kubernetes, web interface, multi-cluster, VUI features, Velero UI]
 sidebar_label: 'Overview'
 sidebar_position: 1
 ---
@@ -43,6 +47,6 @@ VUI has been developed, tested, and deployed in multi-cluster environments with 
 ## Installation
 
 We strongly recommend using **Helm** to install VUI, as it simplifies deployment and minimizes manual configuration.  
-You can follow the [Helm installation guide](/docs/getting-started/installation/helm) for step-by-step instructions.
+You can follow the [Helm installation guide](/docs/getting-started/installation/helm-installation) for step-by-step instructions.
 
-For faster setup, we also provide [predefined scenario templates](/docs/getting-started/installation/scenarios/overview) with minimal override files tailored to common use cases.
+For faster setup, we also provide [predefined scenario templates](/docs/getting-started/installation/scenarios/installation-scenarios) with minimal override files tailored to common use cases.

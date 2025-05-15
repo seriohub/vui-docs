@@ -1,7 +1,10 @@
 ---
+id: configuration
+title: VUI Configuration – Customize Your Installation with Helm Values
+description: Customize your VUI installation using Helm values. Explore key configuration options and learn how to tailor the deployment to your environment using the Velero Helm chart.
+keywords: [VUI, Velero, configuration, Helm values, Kubernetes, VUI setup, Velero Helm chart, custom installation]
 sidebar_label: 'Configuration'
-sidebar_position: 30
-description: 'Helm values'
+sidebar_position: 4
 ---
 
 # Configuration

@@ -1,5 +1,6 @@
 {
   "label": "Installation",
+  "description": "5 minutes to learn the most important Vui concepts.",
   "position": 3,
   "link": {
     "type": "generated-index",

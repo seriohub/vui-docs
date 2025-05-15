@@ -1,6 +1,10 @@
 ---
+id: create-restore
+title: Create Restore – Recover Backups with Namespace and Storage Mapping
+description: Use the VUI Create Restore form to restore Velero backups with detailed control. Map namespaces, view PVCs, and adjust storage classes to ensure a smooth and successful recovery process.
+keywords: [VUI, Velero, restore backup, create restore, PVC mapping, storage class, Kubernetes recovery, backup restore process, VUI restore]
 sidebar_label: 'Restore'
-sidebar_position: 40
+sidebar_position: 4
 ---
 
 # Create restore

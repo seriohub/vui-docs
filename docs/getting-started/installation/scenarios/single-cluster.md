@@ -1,4 +1,8 @@
 ---
+id: single-cluster-installation
+title: Single Cluster Installation – Deploy VUI in a Standalone Kubernetes Environment
+description: Learn how to install all VUI components in a single Kubernetes cluster. Ideal for local setups, testing, and simple standalone deployments with built-in authentication.
+keywords: [VUI, Velero, single cluster, standalone installation, Kubernetes, local environment, VUI setup]
 sidebar_label: 'Single Cluster'
 sidebar_position: 2
 ---
@@ -58,7 +62,7 @@ helm install vui seriohub/vui \
 
 Once deployed, the UI will be available at:
 
-```
+```text
 https://vui.yourdomain.com
 ```
 

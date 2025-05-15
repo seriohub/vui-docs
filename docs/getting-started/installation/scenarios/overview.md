@@ -1,4 +1,8 @@
 ---
+id: installation-scenarios
+title: VUI Installation Scenarios – Choose the Right Deployment Strategy
+description: Explore different VUI installation scenarios based on your environment. Learn how to simplify deployment using Helm and pre-configured override files for common use cases.
+keywords: [VUI, Velero, installation scenarios, Helm deployment, Kubernetes backup, override files, VUI setup]
 sidebar_label: 'Installation Scenarios'
 sidebar_position: 1
 ---

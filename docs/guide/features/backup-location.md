@@ -1,6 +1,10 @@
 ---
+id: backup-location
+title: Backup Location – View and Manage Velero Storage Settings
+description: Access and manage Velero backup locations through a tabular view in VUI. Monitor provider, bucket, access mode, and status to ensure your backup infrastructure is secure and functioning properly.
+keywords: [VUI, Velero, backup location, storage settings, Kubernetes, Velero bucket, backup provider, backup status, VUI dashboard]
 sidebar_label: 'Backup location'
-sidebar_position: 60
+sidebar_position: 6
 ---
 
 # Backup location

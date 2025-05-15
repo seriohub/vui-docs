@@ -1,6 +1,10 @@
 ---
+id: storage-class-map
+title: Storage Class Mapping – Customize Backup Restores Across Environments
+description: Use the Storage Class Map in VUI to define how storage classes are mapped during backup restores. Adapt to different environments and ensure consistency, compliance, and optimal performance.
+keywords: [VUI, Velero, storage class mapping, restore configuration, Kubernetes, backup restore, disaster recovery, cross-environment restore, storage flexibility]
 sidebar_label: 'Storage Class mapping'
-sidebar_position: 90
+sidebar_position: 9
 ---
 
 # Storage Class Map

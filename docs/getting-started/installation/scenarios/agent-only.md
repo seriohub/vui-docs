@@ -1,6 +1,10 @@
 ---
+id: agent-only-installation
+title: Agent-Only Installation – Deploy VUI Components in a Secondary Cluster
+description: Learn how to install only the VUI agent components (`vui-api` and `vui-watchdog`) in a secondary Kubernetes cluster and connect them to a centralized VUI-Core instance.
+keywords: [VUI, Velero, agent-only installation, VUI API, vui-watchdog, secondary cluster, VUI architecture]
 sidebar_label: 'Agent Only'
-sidebar_position: 33
+sidebar_position: 4
 ---
 
 # Agent-Only Installation

@@ -1,6 +1,10 @@
 ---
+id: schedules
+title: Schedule Management – Automate and Control Backup Operations
+description: Manage Velero backup schedules in VUI. Create, view, and trigger scheduled backups, monitor TTL and last backup time, and control pause status to optimize automation and resource usage.
+keywords: [VUI, Velero, backup schedules, schedule management, Kubernetes, automated backups, TTL, pause schedule, VUI UI, backup automation]
 sidebar_label: 'Schedules'
-sidebar_position: 50
+sidebar_position: 5
 ---
 
 # Schedules Managment

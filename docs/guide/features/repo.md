@@ -1,6 +1,10 @@
 ---
+id: repositories
+title: Repository Management – View and Maintain Kopia and Restic Repositories
+description: Manage Kopia and Restic repositories in VUI. View details like volume namespace, repository type, storage location, and lock status. Monitor storage usage and perform maintenance tasks such as unlocking Restic repositories.
+keywords: [VUI, Velero, repository management, Restic, Kopia, backup repositories, lock status, storage usage, Kubernetes backups]
 sidebar_label: 'Repositories'
-sidebar_position: 80
+sidebar_position: 8
 ---
 
 # Repo

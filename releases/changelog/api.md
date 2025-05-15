@@ -1,8 +1,12 @@
 ---
+id: api-changelog
+title: API Changelog – Track Changes and Updates to VUI API
+description: Stay informed about all notable changes to the VUI API. This changelog includes version updates, improvements, bug fixes, and compatibility changes.
+keywords: [VUI, API changelog, version history, updates, API changes, Velero, Kubernetes, bug fixes, release notes]
 sidebar_label: 'API'
 sidebar_position: 2
-description: API changelog
 ---
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

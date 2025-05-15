@@ -1,8 +1,12 @@
 ---
+id: watchdog-changelog
+title: Watchdog Changelog – Track Changes and Updates to VUI Watchdog
+description: Stay informed about all notable changes to the VUI Watchdog. This changelog includes version updates, improvements, bug fixes, and compatibility changes.
+keywords: [VUI, Watchdog changelog, version history, updates, Watchdog changes, Velero, Kubernetes, bug fixes, release notes]
 sidebar_label: 'Watchdog'
 sidebar_position: 4
-description: Watchdog changelog
 ---
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

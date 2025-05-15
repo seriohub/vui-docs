@@ -1,6 +1,10 @@
 ---
+id: helm-installation
+title: Helm Installation – Deploy VUI Using the Recommended Method
+description: Learn how to install VUI using Helm, the preferred method for managing deployments. This guide covers core steps and links to scenario-specific configurations for single or multi-cluster environments.
+keywords: [VUI, Velero, Helm installation, Kubernetes, Helm chart, VUI deployment, override files, installation guide]
 sidebar_label: 'Helm'
-sidebar_position: 3
+sidebar_position: 1
 ---
 
 # Helm Installation
@@ -9,7 +13,7 @@ This page provides the general steps to install VUI using Helm, the recommended 
 Helm simplifies installation, upgrade, and management of VUI components across different environments.
 
 While this guide covers the core installation process, we highly recommend reviewing the  
-[Installation Scenarios](/docs/getting-started/installation/scenarios/overview) page first.  
+[Installation Scenarios](/docs/getting-started/installation/scenarios/installation-scenarios) page first.  
 It offers a set of predefined configurations (override files) tailored to common use cases such as:
 
 - Single-cluster deployment
@@ -55,7 +59,7 @@ seriohub/vui      0.1.6           0.1.6         Velero User Interface: a friendl
 ### 3. Choose an override file
 
 Start from one of the [predefined override files](https://github.com/seriohub/velero-helm/tree/main/examples/overrides).  
-Each file is tailored for a specific [installation scenario](/docs/getting-started/installation/scenarios/overview#list-of-available-override-files).
+Each file is tailored for a specific [installation scenario](/docs/getting-started/installation/scenarios/installation-scenarios#list-of-available-override-files).
 
 > For a basic setup, you can use a file like `single-cluster.yaml` as a starting point.
 

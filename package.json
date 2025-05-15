@@ -14,7 +14,8 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "commit": "cz"
   },
   "dependencies": {
     "@docusaurus/core": "3.7.0",
@@ -37,6 +38,8 @@
     "@docusaurus/module-type-aliases": "3.7.0",
     "@docusaurus/tsconfig": "3.7.0",
     "@docusaurus/types": "3.7.0",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
     "typescript": "~5.7.3"
   },
   "browserslist": {
@@ -53,5 +56,10 @@
   },
   "engines": {
     "node": ">=18.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

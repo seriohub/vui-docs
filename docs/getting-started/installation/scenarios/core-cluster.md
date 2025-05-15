@@ -1,11 +1,19 @@
 ---
+id: core-cluster-installation
+title: Core Cluster Installation – Set Up Centralized VUI-Core
+description: Learn how to install and configure VUI-Core for centralized management of multiple Kubernetes clusters. Enable multi-cluster visibility and control through a single Velero UI instance.
+keywords: [VUI, VUI-Core, Velero, Kubernetes, centralized backup, multi-cluster, Velero UI, core cluster installation]
 sidebar_label: 'Core'
 sidebar_position: 3
 ---
 
 # Core Cluster Installation
 
-This scenario sets up a centralized VUI instance using **VUI-Core**, designed to manage multiple remote clusters from a single UI.
+Starting from **VUI version 0.3.0**, the new `vui-core` component is available.  
+It enables centralized management of multiple remote clusters from a single UI instance.  
+👉 [Read the announcement](/blog/vui-0.3.0) and learn more [about the project](/docs/licenses/about-the-project).
+
+This scenario sets up a **centralized VUI environment** using **VUI-Core**, designed for multi-cluster visibility, coordination, and control.
 
 ## Namespace Creation
 

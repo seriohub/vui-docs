@@ -1,4 +1,8 @@
 ---
+id: contribution-guidelines
+title: Contribution Guidelines – How to Contribute to the VUI Project
+description: Learn how to contribute to the VUI project. Follow our contribution guidelines to report issues, suggest features, improve documentation, and collaborate with the community.
+keywords: [VUI, open source, contribute, contribution guidelines, GitHub, documentation, community, feature request, bug report]
 sidebar_label: 'How to contribute'
 sidebar_position: 2
 ---

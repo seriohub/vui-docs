@@ -1,8 +1,12 @@
 ---
+id: helm-changelog
+title: HELM Chart Changelog – Track Changes and Updates to VUI HELM Chart
+description: Stay informed about all notable changes to the VUI Helm Chart. This changelog includes version updates, improvements, bug fixes, and compatibility changes.
+keywords: [VUI, Helm Chart changelog, version history, updates, Helm changes, Velero, Kubernetes, bug fixes, release notes]
 sidebar_label: 'Helm'
 sidebar_position: 1
-description: HELM changelog
 ---
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

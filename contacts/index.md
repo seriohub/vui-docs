@@ -1,6 +1,8 @@
 ---
-sidebar_label: 'Contacts'
-sidebar_position: 100
+id: contacts
+title: Contact the VUI Team – Connect, Contribute, and Collaborate
+description: Get in touch with the VUI development team for questions, feedback, or contributions. Contact us via GitHub, email, or future community channels to collaborate and stay informed.
+keywords: [VUI, contact, open source, GitHub, email, community, contribute, support, feedback, collaboration]
 sidebar: false
 ---
 

@@ -1,6 +1,10 @@
 ---
+id: single-cluster
+title: Single Cluster Deployment – All VUI Components in One Kubernetes Cluster
+description: Deploy all VUI components within a single Kubernetes cluster. Learn about the architecture layers including UI, API, and watchdog services, and how they interact in a standalone setup.
+keywords: [VUI, Velero, single cluster, Kubernetes, VUI architecture, vui-ui, vui-api, vui-watchdog, microservices, standalone deployment]
 sidebar_label: 'Single cluster'
-sidebar_position: 10
+sidebar_position: 2
 ---
 
 # Single Cluster

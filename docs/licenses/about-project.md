@@ -1,4 +1,8 @@
 ---
+id: about-the-project
+title: About the VUI Project – Vision, Community, and Sustainability
+description: Learn about the vision and sustainability of the VUI project. Discover how community support and sponsorships contribute to the long-term development of this open-source Velero interface.
+keywords: [VUI, open-source, Velero, community, sponsorship, sustainability, project vision, VUI development]
 sidebar_label: 'About the Project'
 sidebar_position: 1
 ---
@@ -30,6 +34,7 @@ The goal is to create a win-win situation:
 - Provide additional value to those who believe in and support the project's future
 
 **The decision to keep the standalone components open is not temporary — it’s a long-term commitment.**  
+
 **`Vui-core`** is an optional addition, not a replacement. Future development will continue to follow this principle: an open, fully functional standalone experience, with optional Pro features.
 
 Any future Pro features will be clearly communicated and will never compromise the usability or completeness of the open-source version.

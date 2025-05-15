@@ -1,4 +1,8 @@
 ---
+id: vui-license
+title: VUI License – Open Source under Apache 2.0
+description: All VUI components are released under the Apache License 2.0. Learn about the licensing terms for vui-api, vui-watchdog, and vui-ui, and access each repository’s license file.
+keywords: [VUI, Velero, open source, Apache 2.0, VUI license, vui-api, vui-ui, vui-watchdog, software licensing]
 sidebar_label: 'VUI License'
 sidebar_position: 2
 ---

@@ -1,8 +1,9 @@
 {
   "label": "Configuration",
+  "description": "Additional configuration details.",
   "position": 15,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Vui concepts."
+    "description": "Additional configuration details."
   }
 }

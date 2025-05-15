@@ -1,6 +1,10 @@
 ---
+id: multi-cluster
+title: Multi-Cluster Deployment – Centralized Management with VUI-Core
+description: Learn how to manage multiple Kubernetes clusters using VUI-Core. This setup enables centralized access and control through a single VUI instance, eliminating the need for multiple UIs.
+keywords: [VUI, Velero, multi-cluster, VUI-Core, centralized management, Kubernetes, cluster federation, Velero UI]
 sidebar_label: 'Multi cluster'
-sidebar_position: 20
+sidebar_position: 3
 ---
 
 # Multi-Cluster

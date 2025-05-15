@@ -1,4 +1,8 @@
 ---
+id: architecture
+title: VUI Architecture – Modular, Cloud-Native Design for Kubernetes
+description: Discover the modular architecture of VUI, built with microservices for scalable, flexible, and cloud-native deployments on Kubernetes. Learn how VUI supports both single and multi-cluster setups.
+keywords: [VUI, Velero, architecture, Kubernetes, microservices, cloud-native, modular design, multi-cluster, VUI-Core]
 sidebar_label: 'Architecture'
 sidebar_position: 1
 ---

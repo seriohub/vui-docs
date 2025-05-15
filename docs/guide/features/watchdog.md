@@ -1,6 +1,10 @@
 ---
+id: watchdog-ui
+title: Watchdog Settings – Test and Monitor Notification Channels in VUI
+description: View and test Watchdog settings in VUI. Ensure notifications are correctly configured to alert you of critical events and system issues for improved reliability and observability.
+keywords: [VUI, Velero, Watchdog, notification channels, system monitoring, alert configuration, Kubernetes, VUI Watchdog, test notifications]
 sidebar_label: 'Watchdog'
-sidebar_position: 110
+sidebar_position: 10
 ---
 
 # Watchdog

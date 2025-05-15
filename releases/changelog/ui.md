@@ -1,8 +1,12 @@
 ---
+id: ui-changelog
+title: UI Changelog – Track Changes and Updates to VUI UI
+description: Stay informed about all notable changes to the VUI UI. This changelog includes version updates, improvements, bug fixes, and compatibility changes.
+keywords: [VUI, UI changelog, version history, updates, UI changes, Velero, Kubernetes, bug fixes, release notes]
 sidebar_label: 'UI'
 sidebar_position: 3
-description: UI changelog
 ---
+
 # Changelog
 
 All notable changes to this project will be documented in this file.

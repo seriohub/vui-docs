@@ -1,7 +1,9 @@
 ---
 id: for-enterprises
-title: For Enterprises
-description: Learn how your company can benefit from VUI, support its development, and unlock advanced features.
+title: VUI for Enterprises – Unlock Pro Features and Dedicated Support
+description: Discover how your organization can benefit from VUI’s advanced capabilities. Learn about enterprise-grade features, dedicated support, and how to contribute to the growth of this open-source Kubernetes backup solution.
+keywords: [VUI, Velero, enterprise backup, Kubernetes, Pro features, enterprise support, open source, Kubernetes recovery, DevOps tools]
+sidebar: false
 ---
 
 # For Enterprises
@@ -30,7 +32,7 @@ If your organization relies on Kubernetes in production, VUI can help you save t
 
 ## Support the Project and Unlock Pro Features
 
-We maintain VUI as an open source project, but advanced modules like `vui-core` are available to **GitHub Sponsors** to help [sustain long-term development](/docs/licenses/project_update).
+We maintain VUI as an open source project, but advanced modules like `vui-core` are available to **GitHub Sponsors** to help [sustain long-term development](/docs/licenses/about-the-project).
 
 By sponsoring the project, your company gets:
 

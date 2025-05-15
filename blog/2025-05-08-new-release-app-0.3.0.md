@@ -1,7 +1,7 @@
 ---
 title: Vui 0.3.0
-slug: vui-0.3.0
 description: A major chart release introducing structural improvements, support for core components, and breaking changes.
+slug: vui-0.3.0
 authors:
   - DSerio
 image: https://i.imgur.com/mErPwqL.png
@@ -18,11 +18,11 @@ We’re excited to announce the release of Vui 0.3.0 alongside Helm Chart 1.0.0,
 
 With this version, the Helm chart structure has been completely refactored. Deprecated fields have been removed, new required values introduced, and the entire layout optimized for clarity and maintainability.
 
-⚠️ This version is not backward-compatible with previous releases (Helm chart 0.1.27 and previous versions). Please refer to the updated templates for [scenario-based](/docs/getting-started/installation/scenarios/overview) installations.
+⚠️ This version is not backward-compatible with previous releases (Helm chart 0.1.27 and previous versions). Please refer to the updated templates for [scenario-based](/docs/getting-started/installation/scenarios/installation-scenarios) installations.
 
 🆕 **Core Support**
 
-This release introduces support for the new [core](/docs/getting-started/installation/scenarios/core-cluster) component—a powerful foundation designed to extend the platform’s capabilities. While still in early stages, it represents a fundamental building block for advanced functionality.
+This release introduces support for the new [core](/docs/getting-started/installation/scenarios/core-cluster-installation) component—a powerful foundation designed to extend the platform’s capabilities. While still in early stages, it represents a fundamental building block for advanced functionality.
 
 Organizations with access to this component can now deploy it directly via Helm. This marks an important step in our effort to offer modular extensibility to those contributing most actively to the project’s growth.
 

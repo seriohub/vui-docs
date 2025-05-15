@@ -1,4 +1,8 @@
 ---
+id: project-rules
+title: Project Rules – Guidelines for Using and Contributing to VUI
+description: Follow these essential rules when using or contributing to the VUI project. Learn the importance of reading the documentation, respecting contribution standards, and collaborating effectively.
+keywords: [VUI, open source, rules, contribution rules, usage guidelines, documentation, community standards, contributor best practices]
 sidebar_label: 'Rules'
 sidebar_position: 3
 ---

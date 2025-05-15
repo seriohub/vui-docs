@@ -1,7 +1,10 @@
 ---
+id: api
+title: VUI API Configuration – Enable and Explore Swagger Documentation
+description: Configure the VUI API component and enable Swagger UI for exploring available endpoints. Learn how to expose API documentation and adjust Helm values accordingly.
+keywords: [VUI, Velero, API, Swagger UI, API documentation, Helm values, Kubernetes, VUI configuration, REST API]
 sidebar_label: 'API'
 sidebar_position: 1
-description: 'API Configuration'
 ---
 
 # API

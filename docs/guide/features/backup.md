@@ -1,6 +1,10 @@
 ---
+id: backups
+title: Backup Management – Create, Monitor, and Restore Velero Backups
+description: Manage Velero backups with VUI. Create, monitor, restore, and delete backups from a centralized interface. View logs, errors, durations, and statuses to ensure reliable data protection.
+keywords: [VUI, Velero, backup management, Kubernetes, backup restore, backup logs, data protection, Velero UI, backup monitoring]
 sidebar_label: 'Backup'
-sidebar_position: 30
+sidebar_position: 3
 ---
 
 # Backups Managment

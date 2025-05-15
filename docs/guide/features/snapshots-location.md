@@ -1,6 +1,10 @@
 ---
+id: snapshot-location
+title: Snapshot Location – View and Manage Velero Snapshot Destinations
+description: View and manage Velero snapshot locations in VUI. Access key details such as provider and bucket in a clear tabular format to ensure proper configuration and monitoring of snapshot storage.
+keywords: [VUI, Velero, snapshot location, snapshot destination, backup snapshot, Kubernetes, Velero bucket, storage configuration, snapshot monitoring]
 sidebar_label: 'Snapshots location'
-sidebar_position: 70
+sidebar_position: 7
 ---
 
 # Snapshot location

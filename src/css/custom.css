@@ -71,3 +71,8 @@ setting table css
   padding: 2px;
   text-align: left;
 }
+
+.medium-zoom-overlay,
+.medium-zoom-image--opened {
+  z-index: 2000 !important;
+}

@@ -1,7 +1,10 @@
 ---
+id: watchdog
+title: Watchdog Configuration – VUI Notification System with Apprise
+description: Configure the VUI Watchdog service using Apprise to send notifications to email, Slack, Telegram, Discord, and more. Learn how to integrate alerts into your backup workflows.
+keywords: [VUI, Velero, Watchdog, Apprise, notifications, alert system, Slack, Telegram, Discord, Kubernetes monitoring, VUI alerts]
 sidebar_label: 'Watchdog'
-sidebar_position: 3
-description: 'WATCHDOG Configuration'
+sidebar_position: 2
 ---
 
 # WATCHDOG

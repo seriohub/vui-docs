@@ -1,6 +1,9 @@
 ---
-sidebar_label: 'Sponsors'
-sidebar_position: 80
+id: sponsors
+title: Sponsors – Support the VUI Open Source Project
+description: A heartfelt thank you to all our sponsors who support the ongoing development of VUI. Learn how you can contribute and help sustain this open-source Velero interface.
+keywords: [VUI, sponsors, open source support, GitHub sponsors, Velero UI, contribute, donation, community support, funding open source]
+sidebar: false
 ---
 
 # Many thanks to all our sponsors!

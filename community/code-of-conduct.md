@@ -1,4 +1,8 @@
 ---
+id: code-of-conduct
+title: Code of Conduct – Building an Inclusive and Respectful VUI Community
+description: Read the VUI Code of Conduct, outlining our commitment to a respectful, inclusive, and harassment-free environment for all contributors, users, and community members.
+keywords: [VUI, community, code of conduct, open source, inclusivity, diversity, contributor guidelines, respectful environment, project governance]
 sidebar_label: 'Code of conduct'
 sidebar_position: 4
 ---

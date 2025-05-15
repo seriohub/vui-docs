@@ -1,8 +1,12 @@
 ---
+id: version-information
+title: Version Information – Helm Releases and Component Compatibility
+description: View all released Helm versions of VUI along with application and component compatibility details. Stay up to date with the latest stable releases and version mappings.
+keywords: [VUI, Helm chart, version information, release history, Kubernetes, component compatibility, Velero versions, Helm releases]
 sidebar_label: 'Version'
-sidebar_position: 15
-description: 'Helm released versions'
+sidebar_position: 5
 ---
+
 Below is the table of released Helm versions, application versions, and component compatibility versions.
 # Version Information
 

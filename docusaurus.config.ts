@@ -95,7 +95,7 @@ const config: Config = {
           label: 'Docs',
         },
         { to: 'blog', label: 'Blog', position: 'left'},
-        { to: '/releases/changelog/helm', label: 'What\'s New', position: 'left' },        
+        { to: '/releases/changelog/helm-changelog', label: 'What\'s New', position: 'left' },        
         { to: '/community/contributors', label: 'Community', position: 'left' },
         { to: '/sponsors/', label: 'Sponsors', position: 'left' },
         { to: '/enterprise/', label: 'Enterprise', position: 'left' },
@@ -115,15 +115,15 @@ const config: Config = {
           items: [
             {
               label: 'Introduction',
-              to: '/docs/intro',
+              to: '/docs/introduction',
             },
             {
               label: 'Installation',
-              to: '/docs/getting-started/installation/helm',
+              to: '/docs/getting-started/installation/helm-installation',
             },
             {
               label: 'Installation Scenarios  ',
-              to: 'docs/getting-started/installation/scenarios/overview',
+              to: 'docs/getting-started/installation/scenarios/installation-scenarios',
             },
           ],
         },
@@ -187,7 +187,7 @@ const config: Config = {
             },
             {
               label: 'Changelog',
-               href: '/releases/changelog/helm',
+               href: '/releases/changelog/helm-changelog',
             },
           ],
         },
@@ -230,8 +230,8 @@ const config: Config = {
       id: 'chart-1.0.0-release',
       content:`
       <strong style="font-size: 1.01rem;">
-        📢 New Release: Chart 1.0.0 is here! Discover breaking changes, streamlined installation flows, and the first release of the powerful <code>core</code> module.
-        <a href="/blog/chart-1.0.0" style="text-decoration: underline;">Read the blog post</a> 🚀
+        📢 New Release: Vui 0.3.0 and Chart 1.0.0 is here! Discover breaking changes, streamlined installation flows, and the first release of the powerful <code>core</code> module.
+        <a href="/blog/vui-0.3.0" style="text-decoration: underline;">Read the blog post</a> 🚀
       </strong>
       `,
       backgroundColor: '#e6f0fa',

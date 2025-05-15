@@ -1,6 +1,10 @@
 ---
+id: docker-compose-installation
+title: Docker Compose Installation – Run VUI Locally outside Kubernetes
+description: Set up VUI locally using Docker Compose.
+keywords: [VUI, Velero, Docker Compose, local installation, VUI API, VUI UI, Kubernetes alternative, VUI testing]
 sidebar_label: 'Docker Compose'
-sidebar_position: 20
+sidebar_position: 3
 ---
 
 # Docker Compose Installation
@@ -123,4 +127,4 @@ http://localhost:3000
 
 ---
 
-> 🔒 For secure environments or public exposure, use the [Helm-based Kubernetes installation](/docs/getting-started/installation/helm).
+> 🔒 For secure environments or public exposure, use the [Helm-based Kubernetes installation](/docs/getting-started/installation/helm-installation).
