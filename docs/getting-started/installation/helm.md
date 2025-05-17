@@ -57,7 +57,7 @@ NAME              CHART VERSION   APP VERSION   DESCRIPTION
 seriohub/vui      0.1.6           0.1.6         Velero User Interface: a friendly UI and dashboard...
 ```
 
-### 3. Choose an override file
+### 3. Choose an override file (OPTIONAL)
 
 Start from one of the [predefined override files](https://github.com/seriohub/velero-helm/tree/main/examples/overrides).  
 Each file is tailored for a specific [installation scenario](/docs/getting-started/installation/scenarios/installation-scenarios#list-of-available-override-files).
@@ -82,15 +82,21 @@ kubectl config set-context --current --namespace=vui
 
 ### 5. Install the chart
 
-:::tip
-Make sure to edit your override file before running the install command.
-:::
+If you're installing with the default values:
 
-``` shell
+```shell
+helm install vui seriohub/vui -n vui
+```
+
+If you're using a custom override file:
+
+```shell
 helm install vui seriohub/vui \
   -n vui \
   -f values-override.yaml
 ```
+
+### 6. Access
 
 :::tip Credentials
 Default login:
@@ -99,7 +105,34 @@ Default login:
 - **Password**: `admin`
 :::
 
-### 6. Upgrade (after config changes)
+If you used **NodePort** or **Ingress**, the application will be accessible at the endpoint configured in `exposure.nodePort` or `exposure.ingress`.
+
+Otherwise, if you used the **default installation**, the services are exposed as **ClusterIP** only.  
+In local test environments, you'll need to manually forward the ports to access the UI and API from your browser:
+
+```shell
+kubectl port-forward svc/vui-api-clusterip-svc 30001:80
+```
+
+```shell
+kubectl port-forward svc/vui-ui-clusterip-svc 30002:80
+```
+
+ClusterIP services are configured via the following Helm values:
+
+- `exposure.clusterIP.localAddress`
+- `exposure.clusterIP.apiPort`
+
+:::caution Known issue with port-forwarding
+
+In some environments, `kubectl port-forward` may fail with a broken pipe error.
+This is a known issue that may affect connectivity or cause the UI to hang.  
+Sometimes a simple **page refresh** is enough to recover, but we recommend using **NodePort** or **Ingress** exposure for better reliability.
+
+This limitation is expected to be resolved in a future release.
+:::
+
+### 7. Upgrade (after config changes)
 
 ``` shell
 helm upgrade vui seriohub/vui \
@@ -107,7 +140,7 @@ helm upgrade vui seriohub/vui \
   -f values-override.yaml
 ```
 
-### 7. Uninstall
+### 8. Uninstall
 
 ``` shell
 helm uninstall vui -n vui
