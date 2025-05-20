@@ -11,7 +11,7 @@
 
 <link rel="preconnect" href="https://matomo.serio.cloud/">
 <script>var _paq=window._paq=window._paq||[];_paq.push(["setRequestMethod","POST"]),_paq.push(["trackPageView"]),_paq.push(["enableLinkTracking"]),_paq.push(["enableHeartBeatTimer"]),function(){var e="https://matomo.serio.cloud/";_paq.push(["setRequestMethod","POST"]),_paq.push(["setTrackerUrl",e+"matomo.php"]),_paq.push(["setSiteId","3"]);var a=document,t=a.createElement("script"),p=a.getElementsByTagName("script")[0];t.type="text/javascript",t.async=!0,t.src=e+"matomo.js",p.parentNode.insertBefore(t,p)}()</script><link rel="stylesheet" href="/assets/css/styles.40686cf1.css">
-<script src="/assets/js/runtime~main.5b1ea45d.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5829d99b.js" defer="defer"></script>
 <script src="/assets/js/main.5edfe653.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -30,10 +30,13 @@ It offers a set of predefined configurations (override files) tailored to common
 <li>Centralized multi-cluster setup</li>
 <li>Agent-only installation</li>
 </ul><p>Using one of these scenarios helps you start with the right structure and minimizes configuration errors.</p></div></div>
-<p>The official Helm chart is available <a href="https://github.com/seriohub/velero-helm" target="_blank" rel="noopener noreferrer">here</a>.</p>
-<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>important</div><div class="admonitionContent_BuS1"><p>VUI consists of a UI that communicates directly with the API service.<br>
-<!-- -->Therefore, the API must be reachable from the client’s browser. The Helm chart supports both <strong>Ingress</strong> and <strong>NodePort</strong> exposure modes to make this possible.</p><blockquote>
-<p>If neither is configured, the application will be unreachable.</p>
+<div class="theme-admonition theme-admonition-important admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>important</div><div class="admonitionContent_BuS1"><p>VUI uses a <strong>client-server architecture</strong>: the <strong>UI</strong> communicates directly with the <strong>API service</strong> via HTTP/HTTPS.<br>
+<!-- -->For this reason, both the UI and API must be <strong>accessible from the user&#x27;s browser</strong>.</p><p>The Helm chart supports the following exposure modes:</p><ul>
+<li><strong>Ingress</strong></li>
+<li><strong>NodePort</strong></li>
+<li><strong>ClusterIP</strong> (requires manual port-forwarding for local testing)</li>
+</ul><blockquote>
+<p>🔓 Both the UI and API endpoints must be exposed — the UI depends on direct access to the API, and the API can also operate independently for automation, debugging, or integration.</p>
 </blockquote></div></div>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="installing-vui-via-helm-repository">Installing VUI via Helm Repository<a href="#installing-vui-via-helm-repository" class="hash-link" aria-label="Direct link to Installing VUI via Helm Repository" title="Direct link to Installing VUI via Helm Repository">​</a></h2>
 <p>Follow these steps:</p>
@@ -71,6 +74,8 @@ It offers a set of predefined configurations (override files) tailored to common
 <div class="language-shell codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-shell codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">kubectl port-forward svc/vui-ui-clusterip-svc 30002:80</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 <p>ClusterIP services are configured via the following Helm values:</p>
 <ul>
+<li><code>exposure.clusterIP.protocol</code></li>
+<li><code>exposure.clusterIP.wsProtocol</code></li>
 <li><code>exposure.clusterIP.localAddress</code></li>
 <li><code>exposure.clusterIP.apiPort</code></li>
 </ul>
