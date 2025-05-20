@@ -24,14 +24,22 @@ It offers a set of predefined configurations (override files) tailored to common
 Using one of these scenarios helps you start with the right structure and minimizes configuration errors.
 :::
 
-The official Helm chart is available [here](https://github.com/seriohub/velero-helm).
-
 :::important
-VUI consists of a UI that communicates directly with the API service.  
-Therefore, the API must be reachable from the client’s browser. The Helm chart supports both **Ingress** and **NodePort** exposure modes to make this possible.
 
-> If neither is configured, the application will be unreachable.
+VUI uses a **client-server architecture**: the **UI** communicates directly with the **API service** via HTTP/HTTPS.  
+For this reason, both the UI and API must be **accessible from the user's browser**.
+
+The Helm chart supports the following exposure modes:
+
+- **Ingress**
+- **NodePort**
+- **ClusterIP** (requires manual port-forwarding for local testing)
+
+> 🔓 Both the UI and API endpoints must be exposed — the UI depends on direct access to the API, and the API can also operate independently for automation, debugging, or integration.
+
 :::
+
+
 
 ## Installing VUI via Helm Repository
 
@@ -120,6 +128,8 @@ kubectl port-forward svc/vui-ui-clusterip-svc 30002:80
 
 ClusterIP services are configured via the following Helm values:
 
+- `exposure.clusterIP.protocol`
+- `exposure.clusterIP.wsProtocol`
 - `exposure.clusterIP.localAddress`
 - `exposure.clusterIP.apiPort`
 
