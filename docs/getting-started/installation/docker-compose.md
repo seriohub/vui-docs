@@ -47,7 +47,6 @@ services:
       K8S_IN_CLUSTER_MODE: "False"
       K8S_VELERO_NAMESPACE: "velero"
       KUBE_CONFIG_FILE: "/root/.kube/config"
-      DEBUG_LEVEL: "debug"
       ORIGINS_1: "http://127.0.0.1:8003"
       ORIGINS_2: "http://localhost:8003"
       CLUSTER_ID: "local-develop-cluster"
@@ -55,7 +54,6 @@ services:
       RESTIC_PASSWORD: "static-passw0rd"
       WATCHDOG_URL: "vui-watchdog"
       WATCHDOG_PORT: "8002"
-
     ports:
       - "8001:8001"
 
@@ -68,18 +66,14 @@ services:
     volumes:
       - /absolute/path/to/your/kubeconfig.yaml:/root/.kube/config
     environment:
-      # API config
       API_ENDPOINT_URL: "0.0.0.0"
       API_ENDPOINT_PORT: "8002"
-      # Kubernetes config
       K8S_IN_CLUSTER_MODE: "false"
       K8S_VELERO_NAMESPACE: "velero"
       PROCESS_LOAD_KUBE_CONFIG: "true"
       PROCESS_KUBE_CONFIG: "/root/.kube/config"
-      # Cluster / monitoring
       CLUSTER_ID: "cluster-backend-name"
       PROCESS_CYCLE_SEC: "1800"
-      # Comma-separated strings of apprise configurations
       APPRISE: ""
     ports:
       - "8002:8002"

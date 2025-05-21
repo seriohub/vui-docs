@@ -139,7 +139,6 @@ In some environments, `kubectl port-forward` may fail with a broken pipe error.
 This is a known issue that may affect connectivity or cause the UI to hang.  
 Sometimes a simple **page refresh** is enough to recover, but we recommend using **NodePort** or **Ingress** exposure for better reliability.
 
-This limitation is expected to be resolved in a future release.
 :::
 
 ### 7. Upgrade (after config changes)
