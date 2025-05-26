@@ -52,10 +52,9 @@ apiService:
 helm repo add seriohub https://seriohub.github.io/velero-helm
 helm repo update
 
-kubectl create ns vui
-
 helm install vui-agent seriohub/vui \
   -n vui \
+  --create-namespace \
   -f agent-only.yaml
 ```
 

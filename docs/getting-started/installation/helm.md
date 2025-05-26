@@ -76,24 +76,14 @@ Each file is tailored for a specific [installation scenario](/docs/getting-start
 For advanced customization, refer to the full [values.yaml](https://github.com/seriohub/velero-helm/blob/main/chart/values.yaml) and the chart [README](https://github.com/seriohub/velero-helm/tree/main/chart).
 :::
 
-### 4. Create the namespace
-
-``` shell
-kubectl create namespace vui
-```
-
-(Optional) To make it your default namespace:
-
-``` shell
-kubectl config set-context --current --namespace=vui
-```
-
-### 5. Install the chart
+### 4. Install the chart
 
 If you're installing with the default values:
 
 ```shell
-helm install vui seriohub/vui -n vui
+helm install vui seriohub/vui \
+  -n vui \
+  --create-namespace
 ```
 
 If you're using a custom override file:
@@ -101,10 +91,11 @@ If you're using a custom override file:
 ```shell
 helm install vui seriohub/vui \
   -n vui \
+  --create-namespace \
   -f values-override.yaml
 ```
 
-### 6. Access
+### 5. Access
 
 :::tip Credentials
 Default login:
@@ -141,7 +132,7 @@ Sometimes a simple **page refresh** is enough to recover, but we recommend using
 
 :::
 
-### 7. Upgrade (after config changes)
+### 6. Upgrade (after config changes)
 
 ``` shell
 helm upgrade vui seriohub/vui \
@@ -149,7 +140,7 @@ helm upgrade vui seriohub/vui \
   -f values-override.yaml
 ```
 
-### 8. Uninstall
+### 7. Uninstall
 
 ``` shell
 helm uninstall vui -n vui
@@ -178,21 +169,13 @@ Start from one of the override files in [`examples/overrides/`](https://github.c
 For detailed parameter descriptions, see the full [values.yaml](https://github.com/seriohub/velero-helm/blob/main/chart/values.yaml) and the [README](https://github.com/seriohub/velero-helm/tree/main/chart).
 :::
 
-### 3. Create the namespace
+### 3. Install the chart locally
 
 ``` shell
-kubectl create namespace vui
+helm install vui ./chart -n vui --create-namespace -f values-override.yaml
 ```
 
-### 4. Install the chart locally
-
-``` shell
-helm install vui ./chart \
-  -n vui \
-  -f values-override.yaml
-```
-
-### 5. Upgrade
+### 4. Upgrade
 
 ``` shell
 helm upgrade vui ./chart \
@@ -200,7 +183,7 @@ helm upgrade vui ./chart \
   -f values-override.yaml
 ```
 
-### 6. Uninstall
+### 5. Uninstall
 
 ``` shell
 helm uninstall vui -n vui

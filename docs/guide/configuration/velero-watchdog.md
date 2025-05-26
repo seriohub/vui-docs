@@ -33,4 +33,4 @@ To configure your delivery channels correctly, refer to the [official Apprise do
 
 ### Email-specific Note
 
-If you're using **email notifications**, you can improve formatting by appending the following parameter to your Apprise URL:
+If you're using **email notifications**, you can improve formatting by appending the following parameter to your Apprise URL: **&format=markdown**

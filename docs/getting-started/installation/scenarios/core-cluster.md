@@ -15,14 +15,6 @@ It enables centralized management of multiple remote clusters from a single UI i
 
 This scenario sets up a **centralized VUI environment** using **VUI-Core**, designed for multi-cluster visibility, coordination, and control.
 
-## Namespace Creation
-
-Before proceeding, create the namespace for the VUI components:
-
-``` shell
-kubectl create namespace vui
-```
-
 ## Switching to the Namespace
 
 After creating the `vui` namespace, you can set it as the default context to avoid specifying `-n vui` in every command.
@@ -178,8 +170,9 @@ helm repo add seriohub https://seriohub.github.io/velero-helm
 helm repo update
 
 helm install vui seriohub/vui \
-  -n vui \
-  -f core.yaml
+-n vui \
+--create-namespace \
+-f core.yaml
 ```
 
 ## Access

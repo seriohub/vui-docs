@@ -51,5 +51,16 @@ export const plugins = [
             sidebarPath: require.resolve('./sidebars.js'), // Path to the sidebar configuration
         },
     ],
+    [
+        '@docusaurus/plugin-client-redirects',
+        {
+            redirects: [
+                {
+                    to: '/sponsors',
+                    from: ['/sponsors/sponsors'],
+                },
+            ],
+        },
+    ],
     ...pluginsChangelog
 ];

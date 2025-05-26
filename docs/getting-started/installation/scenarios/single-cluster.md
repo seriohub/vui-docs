@@ -24,7 +24,7 @@ Use the predefined override file:
 
 Minimal required configuration:
 
-```
+```yaml
 global:
   veleroNamespace: <your-velero-namespace>
   clusterName: <your-cluster-name>
@@ -35,12 +35,25 @@ apiService:
     defaultAdminPassword: <your-password>
 
 exposure:
-  mode: ingress
+  mode: ingress # one of: nodePort, ingress, clusterIP
+
+  # clusterIP:
+  #  protocol: http
+  #  wsProtocol: ws
+  #  localAddress: "127.0.0.1"    
+  #  apiPort:
+
+  # nodePort:
+    # ip: 10.10.0.100
+    # apiPort: 30001
+    # uiPort: 30002
+
   ingress:
     spec:
       tls:
         - hosts:
             - vui.yourdomain.com
+            # secretName: vui-tls
 ```
 
 > 📝 Replace the placeholders (`<your-...>`) with actual values for your environment.
@@ -51,11 +64,10 @@ exposure:
 helm repo add seriohub https://seriohub.github.io/velero-helm
 helm repo update
 
-kubectl create ns vui
-
 helm install vui seriohub/vui \
-  -n vui \
-  -f single-cluster.yaml
+-n vui \
+--create-namespace \
+-f single-cluster.yaml
 ```
 
 ## Access
