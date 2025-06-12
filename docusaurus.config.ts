@@ -230,8 +230,7 @@ const config: Config = {
       id: 'chart-1.0.0-release',
       content:`
       <strong style="font-size: 1.01rem;">
-        📢 New Release: Vui 0.3.0 and Chart 1.0.0 is here! Discover breaking changes, streamlined installation flows, and the first release of the powerful <code>core</code> module.
-        <a href="/blog/vui-0.3.0" style="text-decoration: underline;">Read the blog post</a> 🚀
+        📢 New Release: Vui 0.4.0 and Chart 1.0.5 are here! Explore the latest features and improvements - <a href="/blog/vui-0.4.0" style="text-decoration: underline;">read the blog post</a> to learn more🚀
       </strong>
       `,
       backgroundColor: '#e6f0fa',
