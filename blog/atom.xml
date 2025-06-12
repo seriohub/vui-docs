@@ -2,11 +2,75 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vui.seriohub.com/blog</id>
     <title>VUI Simplify Your Velero Backups Management Blog</title>
-    <updated>2025-05-20T00:00:00.000Z</updated>
+    <updated>2025-06-11T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vui.seriohub.com/blog"/>
     <subtitle>VUI Simplify Your Velero Backups Management Blog</subtitle>
     <icon>https://vui.seriohub.com/img/favicon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[VUI 0.4.0]]></title>
+        <id>https://vui.seriohub.com/blog/vui-0.4.0</id>
+        <link href="https://vui.seriohub.com/blog/vui-0.4.0"/>
+        <updated>2025-06-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Major improvements to the dashboard, new features for backup visibility, and UI/UX enhancements across the board.]]></summary>
+        <content type="html"><![CDATA[<p>We’re excited to announce the release of <strong>VUI 0.4.0</strong>, bundled with <strong>Helm Chart v1.0.5</strong> — a major update that enhances visibility, usability, and multi-cluster readiness.</p>
+<p>This release builds upon the recent introduction of <code>vui-core</code>, delivering upgrades across both the <strong>API</strong> and <strong>UI</strong> for a more seamless and powerful experience.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-whats-new">🚀 What’s New<a href="https://vui.seriohub.com/blog/vui-0.4.0#-whats-new" class="hash-link" aria-label="Direct link to 🚀 What’s New" title="Direct link to 🚀 What’s New">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-smarter-dashboards">🧠 Smarter Dashboards<a href="https://vui.seriohub.com/blog/vui-0.4.0#-smarter-dashboards" class="hash-link" aria-label="Direct link to 🧠 Smarter Dashboards" title="Direct link to 🧠 Smarter Dashboards">​</a></h3>
+<ul>
+<li><strong>Improved Recent Backups Table</strong>: Redesigned layout and better performance for reviewing the latest backup activities.</li>
+<li><strong>Unscheduled Namespaces</strong>: New panel lets you quickly schedule backups for newly discovered namespaces.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-backup-statistics">📊 Backup Statistics<a href="https://vui.seriohub.com/blog/vui-0.4.0#-backup-statistics" class="hash-link" aria-label="Direct link to 📊 Backup Statistics" title="Direct link to 📊 Backup Statistics">​</a></h3>
+<ul>
+<li><strong>Backup Overview Panel</strong>: A new section provides immediate insights into backup activity across your schedules.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-enhanced-ux--design">🎨 Enhanced UX &amp; Design<a href="https://vui.seriohub.com/blog/vui-0.4.0#-enhanced-ux--design" class="hash-link" aria-label="Direct link to 🎨 Enhanced UX &amp; Design" title="Direct link to 🎨 Enhanced UX &amp; Design">​</a></h3>
+<ul>
+<li><strong>Refreshed Visuals</strong>: Updated icons, colors, and loaders deliver a more polished and consistent UI.</li>
+<li><strong>Tables Overhaul</strong>: Tables have been completely restructured. You can now:<!-- -->
+<ul>
+<li>Filter globally or by individual column</li>
+<li>Highlight search matches</li>
+<li>Sort and group columns</li>
+<li>Pin columns and select which ones to display<br>
+<!-- -->Each table remembers its layout, so users can personalize views per resource type.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="-improved-interactions">🔍 Improved Interactions<a href="https://vui.seriohub.com/blog/vui-0.4.0#-improved-interactions" class="hash-link" aria-label="Direct link to 🔍 Improved Interactions" title="Direct link to 🔍 Improved Interactions">​</a></h3>
+<ul>
+<li><strong>Log Search</strong>: Easily search inside log outputs.</li>
+<li><strong>Manifest Search</strong>: Quickly locate specific entries within backup manifests.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="️-core-support--multi-cluster">⚙️ Core Support &amp; Multi-Cluster<a href="https://vui.seriohub.com/blog/vui-0.4.0#%EF%B8%8F-core-support--multi-cluster" class="hash-link" aria-label="Direct link to ⚙️ Core Support &amp; Multi-Cluster" title="Direct link to ⚙️ Core Support &amp; Multi-Cluster">​</a></h3>
+<ul>
+<li><strong>Core-Aware Components</strong>: Key features like <code>BackupDetails</code> now include awareness of <code>vui-core</code> environments, improving centralized operations and agent integration.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-fixes--maintenance">🐞 Fixes &amp; Maintenance<a href="https://vui.seriohub.com/blog/vui-0.4.0#-fixes--maintenance" class="hash-link" aria-label="Direct link to 🐞 Fixes &amp; Maintenance" title="Direct link to 🐞 Fixes &amp; Maintenance">​</a></h2>
+<ul>
+<li>Resolved issues with undefined values in API stats</li>
+<li>Suppressed noisy UI warnings</li>
+<li>Removed legacy and unused logic</li>
+<li>Improved in-memory caching and token flow reliability</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-performance--polish">⚡ Performance &amp; Polish<a href="https://vui.seriohub.com/blog/vui-0.4.0#-performance--polish" class="hash-link" aria-label="Direct link to ⚡ Performance &amp; Polish" title="Direct link to ⚡ Performance &amp; Polish">​</a></h2>
+<ul>
+<li>Debounce delay lowered for snappier UI response</li>
+<li>Cleaner code, improved auth logic, and dependency updates</li>
+</ul>
+<hr>
+<p>As always, detailed changelogs are available in the official <a href="https://github.com/seriohub/vui-api/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">API changelog</a> and <a href="https://github.com/seriohub/vui-ui/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer">UI changelog</a>.</p>
+<p>If you're already using VUI or exploring centralized backup management with <code>vui-core</code>, this release is highly recommended.</p>
+<p>👉 To get started or upgrade, see the <a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/installation-scenarios">Installation Scenarios Guide</a>.</p>
+<hr>
+<p>Thanks for supporting and contributing to the VUI project!<br>
+<!-- -->Feel free to open an issue or reach out with suggestions or feedback.</p>]]></content>
+        <author>
+            <name>Davide Serio</name>
+            <uri>https://github.com/davideserio</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Vui 0.3.3]]></title>
         <id>https://vui.seriohub.com/blog/vui-0.3.3</id>
