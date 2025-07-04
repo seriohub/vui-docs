@@ -28,7 +28,7 @@ kubectl config set-context --current --namespace=vui
 > 📌 This sets `velero-ui` as the default namespace for your current kubectl context.
 > You can switch back to another namespace later if needed.
 
-## Creating Core Credentials
+## Creating Docker Registry Core Credentials
 
 Sponsors will have access to the `vui-core` package hosted under the `seriohub` organization on **hub.serio.cloud** (a private Docker registry).
 
@@ -74,7 +74,7 @@ Create a file named `.dockerconfigjson` with the following content:
 Then create the secret:
 
 ```shell
-kubectl create secret generic harbor-creds \
+kubectl create secret generic vui-core-login-secret \
   --from-file=.dockerconfigjson=.dockerconfigjson \
   --type=kubernetes.io/dockerconfigjson
 ```
@@ -119,7 +119,7 @@ kubectl create secret generic vui-nats-user-auth \
 ## Configuration
 
 Use the predefined override file:  
-[`core.yaml`](https://github.com/seriohub/velero-helm/blob/main/examples/overrides/core-cluster.yaml)
+[`core.yaml`](https://github.com/seriohub/velero-helm/blob/main/examples/overrides/core.yaml)
 
 Minimal required configuration:
 
