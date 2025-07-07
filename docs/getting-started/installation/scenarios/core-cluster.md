@@ -9,6 +9,11 @@ sidebar_position: 3
 
 # Core Cluster Installation
 
+:::important
+`core-cluster` is the **only component of the VUI project not released under the Apache 2.0 license**. It is a **proprietary, closed-source component**, distributed under a custom End-User License Agreement (EULA) and available exclusively to active Seriohub sponsors at the required tier.
+For full licensing details, refer to the [VUI License Overview](/docs/licenses/vui-license) and the [VUI-Core License Terms](/docs/licenses/vui-core-license).
+:::
+
 Starting from **VUI version 0.3.0**, the new `vui-core` component is available.  
 It enables centralized management of multiple remote clusters from a single UI instance.  
 👉 [Read the announcement](/blog/vui-0.3.0) and learn more [about the project](/docs/licenses/about-the-project).

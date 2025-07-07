@@ -12,6 +12,10 @@ All other components of the VUI project are open-source and distributed under th
 
 ---
 
+> ⚠️ **Questa è una traduzione non ufficiale a scopo puramente informativo. In caso di conflitto, fa fede esclusivamente la versione originale in inglese.**
+
+---
+
 ## Contratto di Licenza con l'Utente Finale (EULA) per VUI-Core — Traduzione informativa
 
 **IMPORTANTE**: LEGGERE ATTENTAMENTE IL PRESENTE CONTRATTO PRIMA DI UTILIZZARE IL SOFTWARE.
@@ -19,8 +23,6 @@ All other components of the VUI project are open-source and distributed under th
 Il presente Contratto di Licenza con l'Utente Finale ("Contratto") è un accordo legale tra te (il "Licenziatario") e **Seriohub** ("Licenziante") per l'utilizzo del componente software proprietario **VUI-Core** (il "Software").
 
 Installando, accedendo o utilizzando il Software, accetti di essere vincolato ai termini del presente Contratto. Se non accetti i termini, non installare né utilizzare il Software.
-
-> ⚠️ **Questa è una traduzione non ufficiale a scopo puramente informativo. In caso di conflitto, fa fede esclusivamente la versione originale in inglese.**
 
 ---
 

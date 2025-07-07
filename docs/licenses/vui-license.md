@@ -9,7 +9,7 @@ sidebar_position: 2
 
 # VUI License
 
-All components of the VUI project are released as **open source software** under the **Apache License, Version 2.0**.
+All components for the installation on a single cluster of the VUI project are released as **open source software** under the **Apache License, Version 2.0**.
 
 The following packages are published under this license:
 
