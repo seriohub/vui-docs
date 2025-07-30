@@ -2,11 +2,50 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vui.seriohub.com/blog</id>
     <title>VUI Simplify Your Velero Backups Management Blog</title>
-    <updated>2025-06-11T00:00:00.000Z</updated>
+    <updated>2025-06-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vui.seriohub.com/blog"/>
     <subtitle>VUI Simplify Your Velero Backups Management Blog</subtitle>
     <icon>https://vui.seriohub.com/img/favicon.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[VUI 0.4.1]]></title>
+        <id>https://vui.seriohub.com/blog/vui-0.4.1</id>
+        <link href="https://vui.seriohub.com/blog/vui-0.4.1"/>
+        <updated>2025-06-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Bugfixes, schema improvements, and a new 14-day trial for VUI-Core.]]></summary>
+        <content type="html"><![CDATA[<p>We’re happy to announce the release of <strong>VUI 0.4.1</strong>, a patch version that addresses key schema issues and improves the reliability of backup handling — along with a few UI refinements and a <strong>new trial mode for VUI-Core</strong>.</p>
+<p>This update is part of our ongoing effort to improve multi-cluster reliability and enhance the day-to-day experience for users working with Velero.</p>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-vui-core-trial-mode">🆕 VUI-Core Trial Mode<a href="https://vui.seriohub.com/blog/vui-0.4.1#-vui-core-trial-mode" class="hash-link" aria-label="Direct link to 🆕 VUI-Core Trial Mode" title="Direct link to 🆕 VUI-Core Trial Mode">​</a></h2>
+<p>Starting with version 0.4.1, you can now test <strong><a href="https://vui.seriohub.com/docs/getting-started/installation/scenarios/core-cluster-installation">VUI-Core</a> in demo mode</strong> for <strong>14 days</strong>.<br>
+<!-- -->This allows you to evaluate centralized multi-cluster features without needing to activate a sponsor license immediately.</p>
+<p>👉 Trial mode is enabled automatically when a valid license is not found.</p>
+<blockquote>
+<p>ℹ️ <strong>Note</strong>: <code>vui-core</code> is the only component in the VUI ecosystem not distributed under the Apache 2.0 license.<br>
+<!-- -->It is released under a separate <a href="https://vui.seriohub.com/docs/licenses/vui-core-license"><strong>End User License Agreement (EULA)</strong></a>.</p>
+</blockquote>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-api-fixes">🐛 API Fixes<a href="https://vui.seriohub.com/blog/vui-0.4.1#-api-fixes" class="hash-link" aria-label="Direct link to 🐛 API Fixes" title="Direct link to 🐛 API Fixes">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backuprepository-schema-validation">BackupRepository Schema Validation<a href="https://vui.seriohub.com/blog/vui-0.4.1#backuprepository-schema-validation" class="hash-link" aria-label="Direct link to BackupRepository Schema Validation" title="Direct link to BackupRepository Schema Validation">​</a></h3>
+<ul>
+<li>Fixed a validation issue where the <code>generateName</code> field in <code>BackupRepository</code> was expected but not provided.</li>
+<li>This field is now marked as <strong>optional</strong> with a sensible default.</li>
+</ul>
+<p>✅ Closes <a href="https://github.com/seriohub/vui-ui/issues/79" target="_blank" rel="noopener noreferrer">vui-ui#79</a></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="backupresponse-schema-robustness">BackupResponse Schema Robustness<a href="https://vui.seriohub.com/blog/vui-0.4.1#backupresponse-schema-robustness" class="hash-link" aria-label="Direct link to BackupResponse Schema Robustness" title="Direct link to BackupResponse Schema Robustness">​</a></h3>
+<p>Improved resilience when parsing Velero backup hook data:</p>
+<ul>
+<li>Handles unexpected types in <code>labelSelector</code> (was dict, expected string)</li>
+<li>Handles <code>pre</code> hook field when it's provided as a list instead of a string</li>
+</ul>
+<p>These fixes prevent <strong>400 errors</strong> and ensure the <strong>Backup Details page doesn't break</strong> even with malformed backup specs.</p>
+<p>✅ Closes <a href="https://github.com/seriohub/vui-ui/issues/85" target="_blank" rel="noopener noreferrer">vui-ui#85</a></p>
+<hr>]]></content>
+        <author>
+            <name>Davide Serio</name>
+            <uri>https://github.com/davideserio</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[VUI 0.4.0]]></title>
         <id>https://vui.seriohub.com/blog/vui-0.4.0</id>
